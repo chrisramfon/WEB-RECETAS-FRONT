@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+
 .imgen{
    height:250px;
-    width:350px;
-   left: 5px;
+    width:300px;
+   left: 0px;
     z-index: -1;
 }
 

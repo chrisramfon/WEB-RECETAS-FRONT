@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 //componentess
 import { LoginComponent } from './login/login.component';
-
+import { FormularioComponent } from './formulario/formulario.component';
 const routes: Routes = [
   {path:'login', component:LoginComponent},
+  {path:'formulario', component:FormularioComponent},
   //Rutas por defecto, dejar al final
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'}
