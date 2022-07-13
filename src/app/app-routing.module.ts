@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-//componentess
+//componentes
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './Register/Register.component';
+//import { RegisterComponent } from './Register/Register.component';
 const routes: Routes = [
   {path:'login', component:LoginComponent},
-  {path:'register', component:RegisterComponent},
   //Rutas por defecto, dejar al final
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'},
