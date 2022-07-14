@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
 
 .imgen{
@@ -96,41 +96,54 @@ h2{
   position: relative;
   z-index: 1;
   max-width: 300px;
+.main-login{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  max-width: 91%;
   margin: 0 auto;
 }
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
+
+.logo-login{
+ background-color: #4F4F4F;
 }
-.container .info {
-  margin: 50px auto;
+
+
+
+h1{
   text-align: center;
+  font-family: 'Viga', sans-serif;
+  font-size: 20px;
 }
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
+
+.input-login{
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
 }
-.container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
+
+input{
+  font-family: 'Viga', sans-serif;
+
+  margin: .5rem 0;
+  border-radius: 60px;
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border: 1px solid #F4F4F4;
+  height: 2.7rem;
+  padding: .5rem 1.6rem;
 }
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #EF3B3A;
-}
-body {
-  background: #76b852; /* fallback for old browsers */
-  background: rgb(141,194,111);
-  background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+
+button{
+  background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+  border-radius: 15px;
+  height: 3rem;
+  width: 40%;
+  margin: 4rem auto;
+
+  font-family: 'Viga';
+  font-style: normal;
+  color: white;
+  font-size: 16px;
+  border: 0px;
 }
 
