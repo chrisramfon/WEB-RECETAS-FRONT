@@ -1,23 +1,69 @@
+/*##################################### Imports #####################################*/
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
-
-.main-login{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  max-width: 91%;
-  margin: 0 auto;
-}
-
-.logo-login{
- background-color: #4F4F4F;
-}
-
-
 
 h1{
   text-align: center;
   font-family: 'Viga', sans-serif;
   font-size: 20px;
+}
+
+input{
+  /*----------- Font -----------*/
+    font-family: 'Viga', sans-serif;
+  
+  /*----------- Size -----------*/
+    margin: .5rem 0;
+    padding: .5rem 1.6rem;  
+    height: 2.7rem;
+  
+  /*----------- Border -----------*/
+    border-radius: 60px;
+    border: 1px solid #F4F4F4;
+  
+  /*----------- Shadow -----------*/
+    box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  
+  }
+
+button{
+/*----------- Color -----------*/
+  background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+  color: white;
+    
+/*----------- Border -----------*/  
+  border-radius: 15px;
+  border: 0px;
+    
+/*----------- Size -----------*/  
+  height: 3rem;
+  width: 11rem;
+  margin: 4rem auto;
+    
+/*----------- Font -----------*/ 
+  font-family: 'Viga';
+  font-style: normal;
+  font-size: 16px;
+    
+}
+
+.main-login{
+/*----------- Flexbox -----------*/
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  
+/*----------- Size -----------*/  
+  margin: 0 auto;
+}
+
+.fondo-login{
+ background-image: url("./img/fondo-login.png");
+ height: 22rem;
+}
+
+.formulario-login{
+  width: 91%;
+  margin: 0 auto;
 }
 
 .input-login{
@@ -26,28 +72,12 @@ h1{
   flex-flow: column;
 }
 
-input{
-  font-family: 'Viga', sans-serif;
 
-  margin: .5rem 0;
-  border-radius: 60px;
-  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
-  border: 1px solid #F4F4F4;
-  height: 2.7rem;
-  padding: .5rem 1.6rem;
-}
-
-button{
-  background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
-  border-radius: 15px;
-  height: 3rem;
-  width: 40%;
-  margin: 4rem auto;
-
-  font-family: 'Viga';
-  font-style: normal;
-  color: white;
-  font-size: 16px;
-  border: 0px;
-}
-
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
