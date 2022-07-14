@@ -24,16 +24,16 @@
       </form>
 
 
-<div class="main-login">
-  <div class="main-login">
+<div class="main-login"><!-- Contenedor principal -->
+  <div class="fondo-login"> <!-- Contenedor del logo -->
     IMAGEN
-  </div>
-  <div class="formulario-login">
+  </div> <!-- Fin contenedor del logo -->
+  <div class="formulario-login"> <!-- Contenedor del formulario -->
     <h1>Inicio de sesión</h1>
-    <div class="input-login">
+    <div class="input-login"> <!-- Contenedor de inputs -->
       <input type="text" placeholder="Usuario" [(ngModel)]  = "Usuario.Usuario">
       <input type="password" placeholder="Contraseña" [(ngModel)]  = "Usuario.Pass">
       <button (click) = "login()">Iniciar Sesión</button>
-    </div>
-  </div>
+    </div> <!-- Fin contenedor de inputs -->
+  </div> <!-- Fin contenedor del formulario -->
 </div>
