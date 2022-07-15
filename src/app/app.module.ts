@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 //Servicios
 import { LoginService } from './Services/login.service';
 import { MenuComponent } from './menu/menu.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MenuComponent } from './menu/menu.component';
     LoginComponent,
     FormularioComponent,
     RegisterComponent,
-    MenuComponent
+    MenuComponent,
+    RegistroComponent
 
   ],
   imports: [
