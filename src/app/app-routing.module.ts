@@ -11,6 +11,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 //import { RegisterComponent } from './Register/Register.component';
 const routes: Routes = [
+  {path:'',redirectTo:'welcome', pathMatch:'full'}, //siempre que inice es a welcome
   {path:'login', component:LoginComponent},
   {path:'formulario', component:FormularioComponent},
   {path:'register', component:RegisterComponent},
@@ -18,8 +19,7 @@ const routes: Routes = [
 
 
   //Rutas por defecto, dejar al final
-  {path:'',redirectTo:'inicio', pathMatch:'full'},
-  {path:'**', redirectTo:'inicio',pathMatch:'full'},
+
 
 ];
 

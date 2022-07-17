@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Route } from '@angular/router';
-
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -8,8 +7,8 @@ import { Route } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
-private router;
+  constructor(private router: Router) { }
+
   ngOnInit(): void {
   }
 
@@ -17,7 +16,6 @@ private router;
   iniciar(){
     this.router.navigate(['/login'])
   }
-
 
   registrar(){
     this.router.navigate(['/register'])
