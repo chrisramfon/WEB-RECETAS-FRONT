@@ -8,11 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { MenuComponent } from './menu/menu.component';
 import { RegisterComponent } from './register/register.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+
+
+
 //Servicios
 import { LoginService } from './Services/login.service';
-import { MenuComponent } from './menu/menu.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+
 
 @NgModule({
   declarations: [
