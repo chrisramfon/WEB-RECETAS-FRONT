@@ -1,36 +1,40 @@
-  <form action="#" method="post">
-    <fieldset>
-      <legend><h2>Nueva Receta</h2></legend>
-      <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Imagen" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-       
-      <div class="input-group">
-       <span><i class="fa fa-envelope-o"></i></span>
-       <input  id="email" placeholder="Nombre de Receta" autocomplete="off" type="email" tabindex="1" autofocus required />
-      </div>
-      <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Tiempo de preparacion" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-       <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Complejidad" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-       <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Porciones" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-     <div class="input-group">
-       <span><i class="fa fa-key"></i></span>
-        <input placeholder="Ingredientes" type="password" disabled>
-      </div>
-      <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Preparaciòn" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-     <input type="submit" value="Enviar">
-    </fieldset>
-  </form>
-
+<h1>Agrega una receta </h1>
+<div class="form-title">
+  <div class="input-wrapper">
+    <input type="search" class="inputs" placeholder="Search">
+      <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+    </svg>
+ </div>
+  <select name="Porciones" id="Porciones" class="porcio">
+    <option value="">Porciones</option>
+    <option value="Cuatro">Cuatro porciones</option>
+    <option value="Ocho">Ocho porciones</option>
+  </select>
+</div>
+<div class="main-register">
+  <div class="form-register">
+    <h2>Agrega una Imagen</h2>
+    <input type="file">
+    <h2>Nombre de la receta</h2>
+  <input type="text" placeholder="Escribe aqui...">
+  <h2>Ingresa </h2>
+  </div>
+<div class="form-title">
+  <input type="text" class="ct" placeholder="Costo">
+  <input type="text" class="ct" placeholder="Tiempo">
+</div>
+</div>
+<div class="main-register">
+  <div class="form-register">
+    <h2>Pais de origen</h2>
+    <input type="text" placeholder="Escribe aqui...">    
+    <h2>Ingredientes</h2>
+    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aqui..."></textarea>
+    <h2>Instrucciones</h2>
+    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aqui..."></textarea>
+    <h2>Recomendaciones</h2>
+    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aqui..."></textarea>
+    <button>Publicar</button>
+  </div>
+</div>
