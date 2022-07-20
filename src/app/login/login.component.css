@@ -74,10 +74,12 @@ button{
 
 .logo-login{
   display: block;
-  margin: 0 auto;
+  margin: auto;
   width: 30rem;
 }
 
+
+/*##################################### Breackpoints #####################################*/
 @media screen and (min-width: 769px){
 
   .main-login{
