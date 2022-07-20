@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
       if(!res.Token) {alert(`${res.Mensaje}`); throw res.Mensaje}
 
       console.log(res)
+      localStorage.setItem('Token', res.Token)
       alert(res.Mensaje)
     }, err=>{
       console.log(err)

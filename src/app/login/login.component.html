@@ -1,40 +1,16 @@
-<body>
-<div class="login-page">
-    <div class="form">
-
-
-    <form class="login-form">
-      <div align="center">
-            <img src="assets/images/LOGO.png" class="imagen">
-            <img src="assets/images/FOND.png" class="imgen">
-        </div>
-
-        <h2>Inicio de Sesión</h2>
-        <br>
-        <input type="text" placeholder="Usuario"/>
-        <input type="password" placeholder="Contraseña"/>
-        <br>
-        <br>
-        <br>
-        <p class="message">No te has registrado? <a href="#">Crea un usuario</a></p>
-        <br>
-        <br>
-        <br>
-        <button>login</button>
-
-      </form>
-
-
-  <div class="main-login"><!-- Contenedor principal -->
-        <div class="fondo-login"> <!-- Contenedor del logo -->
-            IMAGEN
-        </div> <!-- Fin contenedor del logo -->
-          <div class="formulario-login"> <!-- Contenedor del formulario -->
-             <h1>Inicio de sesión</h1>
-            <div class="input-login"> <!-- Contenedor de inputs -->
-              <input type="text" placeholder="Usuario" [(ngModel)]  = "Usuario.Usuario">
-              <input type="password" placeholder="Contraseña" [(ngModel)]  = "Usuario.Pass">
-              <button (click) = "login()">Iniciar Sesión</button>
-            </div> <!-- Fin contenedor de inputs -->
-        </div> <!-- Fin contenedor del formulario -->
-  </div>
+<div class="main-login"><!-- Contenedor principal -->
+  <div class="fondo-login"> <!-- Contenedor del logo -->
+    
+      <img src="assets/images/LOGO.png" class="logo-login">
+    
+       
+  </div> <!-- Fin contenedor del logo -->
+  <div class="formulario-login"> <!-- Contenedor del formulario -->
+    <h1>Inicio de sesión</h1>
+    <div class="input-login"> <!-- Contenedor de inputs -->
+      <input type="text" placeholder="Usuario" [(ngModel)]  = "Usuario.Usuario">
+      <input type="password" placeholder="Contraseña" [(ngModel)]  = "Usuario.Pass">
+      <button (click) = "login()">Iniciar Sesión</button>
+    </div> <!-- Fin contenedor de inputs -->
+  </div> <!-- Fin contenedor del formulario -->
+</div>
