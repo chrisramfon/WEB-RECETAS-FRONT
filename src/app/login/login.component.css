@@ -51,7 +51,7 @@ button{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  
+  width: 93%;
 /*----------- Size -----------*/  
   margin: 0 auto;
 }
@@ -72,6 +72,28 @@ button{
   flex-flow: column;
 }
 
+.logo-login{
+  display: block;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+@media screen and (min-width: 769px){
+
+  .main-login{
+    flex-flow: row;
+    margin-top: 10rem;
+    max-width: 1000px;
+  }
+
+  .fondo-login{
+    margin-right: 2rem;
+  }
+
+  input{
+    max-width: 900px;
+  }
+}
 
 /*
 Tamaños a considerar para breakpoints
@@ -81,3 +103,4 @@ Tamaños a considerar para breakpoints
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
+
