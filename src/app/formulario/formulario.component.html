@@ -1,40 +1,39 @@
 <h1>Agrega una receta </h1>
-<div class="form-title">
-  <div class="input-wrapper">
-    <input type="search" class="inputs" placeholder="Search">
-      <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
-    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-    </svg>
- </div>
-  <select name="Porciones" id="Porciones" class="porcio">
-    <option value="">Porciones</option>
-    <option value="Cuatro">Cuatro porciones</option>
-    <option value="Ocho">Ocho porciones</option>
-  </select>
-</div>
 <div class="main-register">
   <div class="form-register">
     <h2>Agrega una Imagen</h2>
-    <input type="file">
+    <input type="file" [(ngModel)]  = "Recetas.Imagen">
     <h2>Nombre de la receta</h2>
-  <input type="text" placeholder="Escribe aqui...">
-  <h2>Ingresa </h2>
+  <input type="text" placeholder="Escribe aqui..."[(ngModel)]  = "Recetas.Titulo" >
+  <h2>Ingresa</h2>
   </div>
 <div class="form-title">
-  <input type="text" class="ct" placeholder="Costo">
-  <input type="text" class="ct" placeholder="Tiempo">
+  <input type="text" class="ct" placeholder="Costo"[(ngModel)]  = "Recetas.Costo">
+  <input type="text" class="ct" placeholder="Tiempo" [(ngModel)]  = "Recetas.Tiempo">
 </div>
 </div>
 <div class="main-register">
+<h2>Ingresa</h2>
+</div>
+<div class="form-title">
+  <select name="" id="" [(ngModel)]  = "Recetas.Dificultad">
+    <option value="">Dificultad</option>
+    <option value="">Baja</option>
+    <option value="">Media</option>
+    <option value="">Alta</option>
+  </select>
+  <input type="text" class="ct" placeholder="Porciones" [(ngModel)]  = "Recetas.Porciones">
+
+</div>
+<div class="main-register">
   <div class="form-register">
-    <h2>Pais de origen</h2>
-    <input type="text" placeholder="Escribe aqui...">    
-    <h2>Ingredientes</h2>
-    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aqui..."></textarea>
-    <h2>Instrucciones</h2>
-    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aqui..."></textarea>
-    <h2>Recomendaciones</h2>
-    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aqui..."></textarea>
-    <button>Publicar</button>
+    <h2>Lugar de origen</h2>
+    <input type="text" placeholder="Escribe aqui..." [(ngModel)]  = "Recetas.Lugar">    
+    <h2>Tipo de cocina</h2>
+    <input type="text" placeholder="Escribe aqui..." [(ngModel)]  = "Recetas.Tipo_de_cocina">   
+    <h2>Ingredientes - Instrucciones</h2>
+    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aquí..."  [(ngModel)]  = "Recetas.Texto"></textarea>
+   <h3>*Nota: puedes agregar recomendaciones en el apartado superior*</h3>
+    <button (click) = "guardarReceta()">Publicar</button>
   </div>
 </div>
