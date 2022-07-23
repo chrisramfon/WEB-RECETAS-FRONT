@@ -2,84 +2,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
 h1{
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 31px;
+
+/*----------- Size -----------*/
     line-height: 131.02%;
     margin-bottom: 0;
-    
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 h2{
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 131.02%;
     color: #09051C;
+
+/*----------- Size -----------*/
+    line-height: 131.02%;
+    
 }
 
 h3{
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 131.02%;
     text-align: center;
+
 }
 
 input{
+/*----------- Other -----------*/
     background: #fef6ed;
     mix-blend-mode: normal;
-    
+
+/*----------- Border -----------*/
     border-radius: 15px;
-    height: 4rem;
     border: 0;
+
+/*----------- Size -----------*/
+    height: 4rem;
     width: 20rem;
-    
+
 }
 
 img{
+/*----------- Display -----------*/
     display: block;
+
+/*----------- Size -----------*/
     width: 96px;
     height: 73px;
     margin: 0 auto;
+
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/*----------- Font -----------*/
     color: #DA6317;
-    opacity: 1;
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.5px;
+
+/*----------- Color -----------*/
+    opacity: 1;
     opacity: 0.4;
-  }
+
+}
 
 .main-home{
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+
+/*----------- Size -----------*/
     width: 93%;
     margin: 0 auto;
+
 }
 
 .title-home{
+/*----------- Background -----------*/
     background-image: url("../login/img/fondo-login.png");
-    height: 11rem;
+
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
+
+/*----------- Size -----------*/
     margin-bottom: 2.3rem;
+    height: 11rem;
+
 }
 
 .content-home{
-    margin-top: 2.3rem;
+/*----------- GRID -----------*/
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50% 50% 50%;
+
+/*----------- Size -----------*/
+    margin-top: 2.3rem;
+
 }
 
 .contenedor-home{
