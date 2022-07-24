@@ -11,12 +11,12 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { MenuComponent } from './menu/menu.component';
 import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-
+import { ProfileComponent } from './profile/profile.component';
 
 
 //Servicios
 import { LoginService } from './Services/login.service';
-import { ProfileComponent } from './profile/profile.component';
+
 
 
 @NgModule({
