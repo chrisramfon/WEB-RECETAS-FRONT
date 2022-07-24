@@ -1,80 +1,127 @@
-body
-{
-    background: #76b852; /* fallback for old browsers */
-    background: rgb(141,194,111);
-    background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;   
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+.main-register{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.form-title{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 1rem;
 }
 
-form
-{
-  width:350px;
-  margin:700px auto;
-  background:white;
-  padding: 20px 0;
-  border-radius: 10px;
+.form-register{
+  width: 30rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+textarea{
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 12px;
+  margin: 1rem 0;
+  height: 15rem;
+  font-family: 'Viga', sans-serif;
+  padding: 0 1.5rem;
+}
+input{
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 22px;
+  margin: 1rem 0;
+  height: 4rem;
+  font-family: 'Viga', sans-serif;
+  padding: 0 1.5rem;
+}
+.ct{
+  width: 18rem;
+
 }
 
-legend
-{
-  text-align:center;
-  color: gray;
+h1{
+  font-family: 'Viga', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
   
 }
-
-
-input
-{
-  width:87%;
-  height:35px;
-  border: none;
-  background:#eaeaea;
-  padding:0 15px;
-  border-radius: 0 5px  5px 0 ;
+h2{
+font-family: 'Viga';
+font-style: normal;
+text-align: center;
+font-weight: 400;
+font-size: 16px;
+line-height: 131.02%;
 }
+h3{
+  font-family: 'Viga';
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 131.02%;
+  }
 
-span
-{
-  display:table-cell;
+button{
+  background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+  border-radius: 15px;
+  height: 3rem;
+  width: 20rem;
+  border: 0;
+  margin: 3rem auto;
+  font-family: 'Viga', sans-serif;
   color: white;
 }
 
-.input-group
-{
-  display:table;
-  width:100%;
-    margin:10px 0;
-}
-span{ 
-  display:table-cell;
-  padding:0 2px;
-  background:#cccccc;
-  border-radius:5px 0  0 5px;
-  text-align:center;
-}
-
-input[type="submit"]
-{
-  background: mediumseagreen;
-  width:300px;
-  border:none;
-  color: white;
-  cursor:pointer;
-  border-radius:5px ;
-  font-size:15px;
-
+.porcio{
+  text-align: center;
+  font-family: 'Viga';
+  font-size: 16px;
+  background: linear-gradient(98.81deg, #DA6317 -0.82%, #faaa5f 101.53%);
+  border-radius: 15px;
+  height: 4rem;
+  width: 15rem;
+  border: 0px;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
 }
 
-input[type="submit"]:hover
-{
-  background:#27ae60
+.input-wrapper {
+  position: relative;
+  
 }
+.input-icon {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inputs {
+  box-sizing: border-box;
+  color: #191919;
+  padding: 15px 15px 15px 35px;
+  width: 20rem;
+}
+select{
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 22px;
+  margin: 1rem 0;
+  height: 4rem;
+  font-family: 'Viga', sans-serif;
+  padding: 0 1.5rem;
+  width: 18rem;
 
-fieldset
-{
-  width:300px;
-  margin:auto;
-  border:none;
 }
