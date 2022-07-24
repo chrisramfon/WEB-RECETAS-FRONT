@@ -16,6 +16,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 //Servicios
 import { LoginService } from './Services/login.service';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { LoginService } from './Services/login.service';
     FormularioComponent,
     RegisterComponent,
     MenuComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ProfileComponent
 
   ],
   imports: [
