@@ -70,6 +70,7 @@ img{
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 /*----------- Font -----------*/
+    text-align: center;
     color: #DA6317;
     font-family: 'Viga', sans-serif;
     font-style: normal;
