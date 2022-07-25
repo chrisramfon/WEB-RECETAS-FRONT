@@ -7,18 +7,7 @@ h1{
   font-size: 25px;
 }
 
-h2{
-  text-align:left;
-  font-family: 'Viga', sans-serif;
-  font-size: 15px;
-}
 
-h3{
-  text-align:left;
-  font-family: 'Viga', sans-serif;
-  font-size: 12px;
-  opacity: 30%;
-}
 
 h4{
   text-align:center;
@@ -83,14 +72,18 @@ button{
   margin: 0 auto;
 }
 
+
+
 .fondo-usuario{
  background-image: url("./img/user1.jpeg");
  height: 15rem;
 }
 
+
 .encabezado-profile{
   width: 90%;
   margin: 0 auto;
+
 }
 
 .input-register{
@@ -101,12 +94,102 @@ button{
 
 
 
-.tar-receta{
-background: hwb(0 100% 0%);
-border-radius:0 0 10px 10px;
-padding: 0px;
-text-align:center;
+
+h2{
+  font-family: 'Viga', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 131.02%;
+  color: #09051C;
 }
+
+h3{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.5px;
+  color: #A69B9B;
+}
+
+
+.fondo-platillo{
+  width: 62px;
+  height: 62px;
+  mix-blend-mode: normal;
+  border-radius: 16px;
+}
+
+
+.fondo-profile{
+
+}
+
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  /*----------- Font -----------*/
+      text-align: center;
+      color: #DA6317;
+      font-family: 'Viga', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+
+  /*----------- Color -----------*/
+      opacity: 1;
+      opacity: 0.4;
+
+  }
+
+  .main-explore{
+  /*----------- Flexbox -----------*/
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+
+  /*----------- Size -----------*/
+      width: 93%;
+      margin: 0 auto;
+
+  }
+
+  .title-explore{
+  /*----------- Background -----------*/
+      background-image: url("../login/img/fondo-login.png");
+
+  /*----------- Flexbox -----------*/
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-end;
+
+  /*----------- Size -----------*/
+      margin-bottom: 2.3rem;
+      height: 11rem;
+  }
+
+  .recetas-explore{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      margin-top: 2.3rem;
+
+  }
+
+  .box-explore{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+      border-radius: 22px;
+      margin-bottom: 1rem;
+  }
+
+
+
 
 
 
