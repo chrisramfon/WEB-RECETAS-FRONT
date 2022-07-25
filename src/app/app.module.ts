@@ -9,10 +9,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { RegisterComponent } from './register/register.component';
+import { ExploreComponent } from './explore/explore.component';
+
 //Servicios
 import { LoginService } from './Services/login.service';
 import { MenuComponent } from './menu/menu.component';
-import { ExploreComponent } from './explore/explore.component';
+import { ExploreService } from './Services/explore.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { ExploreComponent } from './explore/explore.component';
     HttpClientModule
   ],
   providers: [
-    LoginService
+    LoginService,
+    ExploreService
   ],
   bootstrap: [AppComponent]
 })

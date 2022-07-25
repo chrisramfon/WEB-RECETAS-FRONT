@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ExploreService } from '../Services/explore.service';
 
 @Component({
   selector: 'app-explore',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExploreComponent implements OnInit {
 
-  constructor() { }
+  constructor(private receta: ExploreService) { }
+
+  List
 
   ngOnInit(): void {
+    this.getRecetas()
+  }
+
+  getRecetas(){
+    this.receta.getRecetas().subscribe(res =>{
+      this.List = res
+    }, err=>{
+      console.log(err)
+    })
   }
 
 }
+

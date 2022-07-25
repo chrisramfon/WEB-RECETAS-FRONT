@@ -6,13 +6,13 @@
         <input type="text" placeholder="¿Qué receta buscas?">
     </div>
     <div class="recetas-explore">
-        <div class="box-explore"><!-- El ngfor va en este div -->
+        <div class="box-explore" *ngFor = "let Re of List"><!-- El ngfor va en este div -->
             <div>
                 <img src="/assets/images/explore/default.png" alt="">
             </div>
             <div>
                 <h2>Lorem ipsum dolor sit</h2>
-                <h3>Lorem</h3>
+                <h3>{{Re.Usuario}}</h3>
             </div>
                 <button>Ver receta</button>
         </div>
