@@ -5,14 +5,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { RegisterComponent } from './register/register.component';
-//componentes
+import { ExploreComponent } from './explore/explore.component';
 
-//import { RegisterComponent } from './Register/Register.component';
+
+
 const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'formulario', component:FormularioComponent},
   {path:'register', component:RegisterComponent},
-  //Rutas por defecto, dejar al final
+  {path: 'explore', component:ExploreComponent},
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'},
 
