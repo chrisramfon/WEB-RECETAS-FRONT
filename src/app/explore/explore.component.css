@@ -15,22 +15,28 @@ h1{
 
 
 h2{
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 131.02%;
     color: #09051C;
+
+/*----------- Size -----------*/
     width: 10rem;
 }
 
 h3{
+/*----------- Font -----------*/
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 9px;
     letter-spacing: 0.5px;
     color: #A69B9B;
+
+/*----------- Size -----------*/
     width: 10rem;
 }
 
@@ -57,12 +63,14 @@ img{
 }
 
 button{
+/*----------- Rectangle -----------*/
     background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
     border-radius: 17.5px;
     width: 79px;
     height: 29px;
     border: 0;
 
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -71,6 +79,7 @@ button{
     letter-spacing: 0.5px;
     color: #FFFFFF;
 
+/*----------- Size -----------*/
     margin: auto 0;
 }
 
@@ -117,21 +126,29 @@ button{
 }
 
 .recetas-explore{
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+
+/*----------- Size -----------*/
     margin-top: 2.3rem;
 
 }
 
 .box-explore{
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
+
+/*----------- Border -----------*/
     box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
     border-radius: 22px;
+
+/*----------- Size -----------*/
     margin-bottom: 1rem;
-    align-items: center;
 }
 
 .ad-explore{
