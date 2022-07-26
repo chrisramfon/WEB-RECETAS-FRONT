@@ -25,10 +25,10 @@ input{
 
   }
 
-button{
+.btn-gris{
 /*----------- Color -----------*/
-  background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
-  color: white;
+  background: linear-gradient(ECF0F3);
+  color: #53E88B;
 
 /*----------- Border -----------*/
   border-radius: 15px;
@@ -44,30 +44,87 @@ button{
   font-style: normal;
   font-size: 16px;
 
+
 }
 
-.main-welcome{
+
+.btn-verde{
+  /*----------- Color -----------*/
+    background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+    color: white;
+
+  /*----------- Border -----------*/
+    border-radius: 15px;
+    border: 0px;
+
+  /*----------- Size -----------*/
+    height: 3rem;
+    width: 11rem;
+    margin: 4rem auto;
+
+  /*----------- Font -----------*/
+    font-family: 'Viga';
+    font-style: normal;
+    font-size: 16px;
+
+  }
+
+.main-login{
 /*----------- Flexbox -----------*/
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-
+  width: 93%;
 /*----------- Size -----------*/
   margin: 0 auto;
 }
 
-.fondo-welcome{
+.fondo-login{
  background-image: url("./img/fondo-login.png");
- height: 10rem;
+ height: 22rem;
 }
 
-.formulario-welcome{
+.formulario-login{
   width: 91%;
   margin: 0 auto;
 }
 
-.input-welcome{
+.input-login{
   margin-top: 2rem;
   display: flex;
   flex-flow: column;
 }
+
+.logo-login{
+  display: block;
+  margin: auto;
+  width: 25rem;
+}
+
+
+/*##################################### Breackpoints #####################################*/
+@media screen and (min-width: 769px){
+
+  .main-login{
+    flex-flow: row;
+    margin-top: 10rem;
+    max-width: 1000px;
+  }
+
+  .fondo-login{
+    margin-right: 2rem;
+  }
+
+  input{
+    max-width: 900px;
+  }
+}
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/

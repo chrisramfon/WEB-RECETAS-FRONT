@@ -14,11 +14,11 @@ export class WelcomeComponent implements OnInit {
 
 
   iniciar(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['login'])
   }
 
   registrar(){
-    this.router.navigate(['/register'])
+    this.router.navigate(['register'])
   }
 
 

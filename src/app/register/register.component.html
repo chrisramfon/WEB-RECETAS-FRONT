@@ -1,16 +1,16 @@
 
-<div class="main-register"><!-- Contenedor principal -->
-  <div class="fondo-register"> <!-- Contenedor del logo -->
+<div class="main-login"><!-- Contenedor principal -->
+  <div class="fondo-login"> <!-- Contenedor del logo -->
+      <img src="assets/images/LOGO.png" class="logo-login">
 
   </div> <!-- Fin contenedor del logo -->
-  <div class="formulario-register"> <!-- Contenedor del formulario -->
-    <h1>Registrate</h1>
-    <div class="input-register"> <!-- Contenedor de inputs -->
+  <div class="formulario-login"> <!-- Contenedor del formulario -->
+    <h1>Registrase</h1>
+    <div class="input-login"> <!-- Contenedor de inputs -->
       <input type="text" placeholder="Ingresa Usuraio" [(ngModel)]  = "NewUsuario.Usuario">
       <input type="email" placeholder="Ingresa email" [(ngModel)]  = "NewUsuario.Email">
       <input type="password" placeholder="Contraseña" [(ngModel)]  = "NewUsuario.Pass">
-      <input type="password" placeholder="Repetir contraseña" [(ngModel)]  = "NewUsuario.Pass">
-      <button (click) = "register()">Registrarse </button>
+      <button (click) = "register()">Registrarme</button>
     </div> <!-- Fin contenedor de inputs -->
   </div> <!-- Fin contenedor del formulario -->
 </div>
