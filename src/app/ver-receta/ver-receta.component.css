@@ -89,7 +89,7 @@ h1{
     margin-top: 2rem;
 }
 
-.icod-ver{
+.icop-ver{
     display: block;
     width: 20px;
     height: 20px;
@@ -107,6 +107,7 @@ h1{
     line-height: 16px;
     letter-spacing: 0.5px;
     color: #989393;
+    margin-right: 1rem;
 }
 
 .icol-ver{
@@ -130,10 +131,47 @@ h1{
     color: #989393;
 }
 
+.texto-ver{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180.52%;
+    font-family: 'Viga', sans-serif;
+    margin-top: 2rem;
+}
+
 @supports(object-fit: cover){
     .imagen-ver img{
         height: 100%;
         object-fit: cover;
         object-position: center center;
+    }
+}
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/*##################################### Breackpoints #####################################*/
+
+@media screen and (min-width: 769px){
+    .main-ver{
+        max-width: 1000px;
+        margin: 0 auto;
+        box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+    }
+
+    .titulo-ver{
+        margin-top: 2rem;
+    }
+
+    .contenido-ver{
+        
+        padding: 1rem;
     }
 }
