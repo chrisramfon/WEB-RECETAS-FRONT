@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { RegisterComponent } from './register/register.component';
 import { ExploreComponent } from './explore/explore.component';
+import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 
 //Servicios
 import { LoginService } from './Services/login.service';
@@ -23,7 +24,8 @@ import { ExploreService } from './Services/explore.service';
     FormularioComponent,
     RegisterComponent,
     MenuComponent,
-    ExploreComponent
+    ExploreComponent,
+    VerRecetaComponent
 
   ],
   imports: [

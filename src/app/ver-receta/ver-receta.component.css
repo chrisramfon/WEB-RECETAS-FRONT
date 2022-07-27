@@ -1,0 +1,139 @@
+/*##################################### Imports #####################################*/
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+h1{
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 131.02%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.main-ver{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.imagen-ver img{
+    width: 100%;
+    height: auto;
+}
+
+.contenido-ver{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.iconos-ver{
+    display: grid;
+    grid-template-columns: 25% 40% 20% 15%;
+}
+
+.usuario-ver{
+    background-color: #e9f9f2;
+    border-radius: 18.5px;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    color: #15BE77;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.02%;
+    margin-top: .9rem;
+}
+
+.lugar-ver{
+    background-color: #e9f9f2;
+    border-radius: 18.5px;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    color: #15BE77;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.02%;
+    margin: auto 0;
+}
+
+.ico-ver{
+    display: block;
+    width: 17px;
+    height: 20px;
+    margin: .2rem auto;
+}
+
+.favorito-ver{
+    background-color: #ffe8e8;
+    border-radius: 18.5px;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    color: #ff1d1d;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.02%;
+    margin: auto 0;
+}
+
+.datos-ver{
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-top: 2rem;
+}
+
+.icod-ver{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto .5rem;
+}
+
+.precio-ver{
+    display: flex;
+    flex-flow: row wrap;
+
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #989393;
+}
+
+.icol-ver{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: auto .5rem;
+
+}
+
+.like-ver{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 1rem;
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #989393;
+}
+
+@supports(object-fit: cover){
+    .imagen-ver img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
