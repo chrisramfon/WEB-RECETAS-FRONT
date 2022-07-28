@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 import { LoginService } from './Services/login.service';
 import { MenuComponent } from './menu/menu.component';
 import { ExploreService } from './Services/explore.service';
+import { VerRecetaService } from './Services/ver-receta.service';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { ExploreService } from './Services/explore.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [
     LoginService,
-    ExploreService
+    ExploreService,
+    VerRecetaService
   ],
   bootstrap: [AppComponent]
 })

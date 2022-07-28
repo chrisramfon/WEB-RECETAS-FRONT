@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'formulario', component:FormularioComponent},
   {path:'register', component:RegisterComponent},
-  {path: 'ver-receta', component: VerRecetaComponent},
+  {path: 'ver-receta/:id', component: VerRecetaComponent},
   {path: 'explore', component:ExploreComponent},
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'},

@@ -29,8 +29,9 @@ h1{
 }
 
 .iconos-ver{
-    display: grid;
-    grid-template-columns: 25% 40% 20% 15%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-end;
 }
 
 .usuario-ver{
@@ -44,7 +45,7 @@ h1{
     font-weight: 400;
     font-size: 12px;
     line-height: 131.02%;
-    margin-top: .9rem;
+    margin: 0 .25rem;
 }
 
 .lugar-ver{
@@ -58,7 +59,7 @@ h1{
     font-weight: 400;
     font-size: 12px;
     line-height: 131.02%;
-    margin: auto 0;
+    margin: auto .25rem;
 }
 
 .ico-ver{
@@ -79,7 +80,7 @@ h1{
     font-weight: 400;
     font-size: 12px;
     line-height: 131.02%;
-    margin: auto 0;
+    margin: auto .25rem;
 }
 
 .datos-ver{

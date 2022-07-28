@@ -5,57 +5,52 @@
     <div class="contenido-ver">
         <div class="iconos-ver">
             <div>
-                <p class="usuario-ver">chrisramfon</p>
-            </div>
-            <div><!-- Div vació para agregar espacio en el grid -->
-
-            </div>
-            <div>
                 <img src="/assets/images/ver-recetas/lugar.png" alt="" class="ico-ver">
-                <p class="lugar-ver">Guadalajara</p>
+                <p class="lugar-ver">{{Res.Lugar}}</p>
             </div>
             <div>
                 <img src="/assets/images/ver-recetas/favorito.png" alt="" class="ico-ver">
                 <p class="favorito-ver">Favorito</p>
             </div>
+            <div>
+                <p class="usuario-ver">{{Res.Usuario}}</p>
+            </div>
         </div>
         <div class="titulo-ver">
-            <h1>Titulo de la receta</h1>
+            <h1>{{Res.Titulo}}</h1>
         </div>
         <div class="datos-ver">
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/precio.png" alt="" class="icop-ver">
-                <p>$500</p>
+                <p>${{Res.Costo}}</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/like.png" alt="" class="icol-ver">
-                <p>100</p>
+                <p>{{Res.Likes}}</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/fecha.png" alt="" class="icop-ver">
-                <p>25 de julio 2022</p>
+                <p>{{Res.Fecha | date:'shortDate'}}</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/cocina.png" alt="" class="icop-ver">
-                <p>Japonesa</p>
+                <p>{{Res.Tipo_de_cocina}}</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/tiempo.png" alt="" class="icop-ver">
-                <p>1 hora</p>
+                <p>{{Res.Tiempo}}</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/dificultad.png" alt="" class="icop-ver">
-                <p>Fácil</p>
+                <p>{{Res.Dificultad}}</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/porciones.png" alt="" class="icop-ver">
-                <p>2</p>
+                <p>{{Res.Porciones}}</p>
             </div>
         </div>
         <div class="texto-ver">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate recusandae nihil excepturi cum. Sed fugiat laudantium quis, nisi rem et harum quidem quibusdam eveniet, nostrum quo, ex sit tempore!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa necessitatibus saepe beatae vitae, quisquam fuga amet doloribus nostrum tenetur quaerat est officia explicabo voluptatem veritatis officiis autem. Expedita, unde.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem aspernatur expedita ducimus, commodi quas dolore soluta molestias et eligendi. At quasi nobis odio temporibus qui facilis magnam. Laboriosam, vitae explicabo.
+            {{Res.Texto}}
         </div>
     </div>
 </div>
