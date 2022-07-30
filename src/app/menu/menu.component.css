@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+  .form-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(90, 108, 234, 0.1);
+    border-radius: 22px;
+    top: 728px;
+    align-items: center;
+    height: 5rem;
+  }
+
+  .frame:hover{
+    background: #e8f9f2;
+    width: 105px;
+    height: 44px;
+    border-radius: 12px;
+    
+  }
+
+  a{
+    font-family: 'Viga', sans-serif;
+    font-size: 16px;
+    color: transparent;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+
+  a:hover{
+    color: black;
+  }
+
+img{
+  height: 24px;
+  width: 24px;
+  margin: 1rem;
+
+}
+
