@@ -12,7 +12,7 @@ export class VerRecetaComponent implements OnInit {
   constructor(private receta: VerRecetaService, private Aroute: ActivatedRoute) { }
 
   Res = {id: "", Titulo: "", Texto: "", Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: ""}
-  Fav = {Token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjU4OTU3NzkzfQ.LPfw5TW25CfEEbAm0ouuW2ivOQ_sbN7797cM7H3qq-I", Receta: this.Res.id = this.Aroute.snapshot.paramMap.get('id')}
+  Fav = {Token: localStorage.getItem('Token'), Receta: this.Res.id = this.Aroute.snapshot.paramMap.get('id')}
   isFav 
 
 
@@ -38,6 +38,12 @@ export class VerRecetaComponent implements OnInit {
         this.isFav = false
       }
     }, err=>{ console.log(err)})
+  }
+
+  postGuardaFavorito(){
+    this.receta.postGaurdaFavorito(this.Fav).subscribe(res=>{
+    console.log(res)  
+    }, err=>{console.log(err)})
   }
 
 }

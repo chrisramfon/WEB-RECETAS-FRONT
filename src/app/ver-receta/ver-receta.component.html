@@ -8,10 +8,16 @@
                 <img src="/assets/images/ver-recetas/lugar.png" alt="" class="ico-ver">
                 <p class="lugar-ver">{{Res.Lugar}}</p>
             </div>
-            <div>
+            <div *ngIf="!isFav else elseBlock">
                 <img src="/assets/images/ver-recetas/favorito.png" alt="" class="ico-ver">
                 <p class="favorito-ver">Favorito</p>
             </div>
+            <ng-template #elseBlock>
+                <div>
+                    <img src="/assets/images/ver-recetas/check.png" alt="" class="ico-ver">
+                    <p class="lugar-ver">En favoritos</p>
+                </div>
+            </ng-template>
             <div>
                 <p class="usuario-ver">{{Res.Usuario}}</p>
             </div>
@@ -22,7 +28,7 @@
         <div class="datos-ver">
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/precio.png" alt="" class="icop-ver">
-                <p>${{Res.Costo}}</p>
+                <p>${{Res.Costo}} MXN</p>
             </div>
             <div class="precio-ver">
                 <img src="/assets/images/ver-recetas/like.png" alt="" class="icol-ver">
