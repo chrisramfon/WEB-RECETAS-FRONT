@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { ExploreComponent } from './explore/explore.component';
 import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 import { HomeComponent } from './home/home.component';
+import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 
 
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'ver-receta/:id', component: VerRecetaComponent},
   {path: 'explore', component:ExploreComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'ver-favoritos', component: VerFavoritosComponent},
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'}
 ];
