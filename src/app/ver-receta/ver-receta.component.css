@@ -181,6 +181,7 @@ h1{
     font-size: 12px;
     line-height: 180.52%;
     font-family: 'Viga', sans-serif;
+    white-space: pre-wrap;
 
 /*----------- Size -----------*/
     margin-top: 2rem;
