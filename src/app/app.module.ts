@@ -9,9 +9,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { RegisterComponent } from './register/register.component';
+import { MenuComponent } from './menu/menu.component';
+
 //Servicios
 import { LoginService } from './Services/login.service';
-import { MenuComponent } from './menu/menu.component';
+import { UsuarioService } from './Services/usuario.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { MenuComponent } from './menu/menu.component';
     HttpClientModule
   ],
   providers: [
-    LoginService
+    LoginService,
+    UsuarioService
   ],
   bootstrap: [AppComponent]
 })
