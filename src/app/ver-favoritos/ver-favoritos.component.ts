@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VerFavoritosService } from '../Services/ver-favoritos.service';
 
 @Component({
   selector: 'app-ver-favoritos',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerFavoritosComponent implements OnInit {
 
-  constructor() { }
+  List
+  Token = {Token: localStorage.getItem('Token')}
+
+  constructor(private favorito: VerFavoritosService) { }
 
   ngOnInit(): void {
+    this.postFavoritos(this.Token)
+  }
+
+  postFavoritos(Token){
+    this.favorito.postFavoritos(Token).subscribe(
+      res=>{this.List = res}, 
+      err=>{ console.log(err)});
   }
 
 }

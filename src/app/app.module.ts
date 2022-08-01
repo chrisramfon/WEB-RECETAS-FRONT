@@ -20,6 +20,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ExploreService } from './Services/explore.service';
 import { VerRecetaService } from './Services/ver-receta.service';
 import { HomeComponent } from './home/home.component';
+import { VerFavoritosService } from './Services/ver-favoritos.service';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { HomeComponent } from './home/home.component';
   providers: [
     LoginService,
     ExploreService,
-    VerRecetaService
+    VerRecetaService,
+    VerFavoritosService
   ],
   bootstrap: [AppComponent]
 })

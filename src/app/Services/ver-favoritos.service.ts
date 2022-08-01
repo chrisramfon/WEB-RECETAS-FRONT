@@ -4,14 +4,14 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ExploreService {
+export class VerFavoritosService {
 
-  private todasURL = "http://127.0.0.1:3000/receta"
+  private urlFavoritos = 'http://127.0.0.1:3000/receta/Favoritos'
 
   constructor(private http: HttpClient) { }
 
-  getRecetas(){
-    return this.http.get<any>(this.todasURL)
+  postFavoritos(Token){
+    return this.http.post<any>(this.urlFavoritos, Token)
   }
 
 }
