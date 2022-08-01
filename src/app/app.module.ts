@@ -12,6 +12,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { RegisterComponent } from './register/register.component';
 import { ExploreComponent } from './explore/explore.component';
 import { VerRecetaComponent } from './ver-receta/ver-receta.component';
+import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 
 //Servicios
 import { LoginService } from './Services/login.service';
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     MenuComponent,
     ExploreComponent,
     VerRecetaComponent,
-    HomeComponent
+    HomeComponent,
+    VerFavoritosComponent
   ],
   imports: [
     BrowserModule,
