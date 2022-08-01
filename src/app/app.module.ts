@@ -18,6 +18,8 @@ import { LoginService } from './Services/login.service';
 import { MenuComponent } from './menu/menu.component';
 import { ExploreService } from './Services/explore.service';
 import { VerRecetaService } from './Services/ver-receta.service';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +29,8 @@ import { VerRecetaService } from './Services/ver-receta.service';
     RegisterComponent,
     MenuComponent,
     ExploreComponent,
-    VerRecetaComponent
-
+    VerRecetaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
