@@ -1,0 +1,224 @@
+/*##################################### Imports #####################################*/
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+h1{
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 131.02%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.main-ver{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.imagen-ver img{
+    width: 100%;
+    height: auto;
+}
+
+.contenido-ver{
+/*----------- Flexbox -----------*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+/*----------- Size -----------*/
+    margin-top: 2rem;
+}
+
+.iconos-ver{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-end;
+}
+
+.usuario-ver{
+/*----------- Border -----------*/
+    border-radius: 18.5px;
+
+/*----------- Color -----------*/
+    background-color: #e9f9f2;
+    color: #15BE77;
+
+/*----------- Font -----------*/
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.02%;
+    margin: 0 .25rem;
+
+/*----------- Size -----------*/
+    padding: .5rem;
+}
+
+.lugar-ver{
+/*----------- Color -----------*/
+    background-color: #e9f9f2;
+    color: #15BE77;
+
+/*----------- Border -----------*/
+    border-radius: 18.5px;
+
+/*----------- Font -----------*/
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.02%;
+
+/*----------- Size -----------*/
+    margin: auto .25rem;
+    padding: .5rem;
+}
+
+.ico-ver{
+/*----------- Display -----------*/
+    display: block;
+
+/*----------- Size -----------*/
+    width: 17px;
+    height: 20px;
+    margin: .2rem auto;
+}
+
+.favorito-ver{
+/*----------- Color -----------*/
+    background-color: #ffe8e8;
+    color: #ff1d1d;
+
+/*----------- Border -----------*/
+    border-radius: 18.5px;
+
+/*----------- Size -----------*/
+    padding: .5rem;
+    margin: auto .25rem;
+
+/*----------- Font -----------*/
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.02%;
+}
+
+.datos-ver{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+
+.icop-ver{
+/*----------- Display -----------*/
+    display: block;
+
+/*----------- Size -----------*/
+    width: 20px;
+    height: 20px;
+    margin: auto .5rem;
+}
+
+.precio-ver{
+/*----------- Flexbox -----------*/
+    display: flex;
+    flex-flow: row wrap;
+
+/*----------- Font -----------*/
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+
+/*----------- Color -----------*/
+    color: #989393;
+
+/*----------- Size -----------*/
+    margin-right: 1rem;
+}
+
+.icol-ver{
+/*----------- Display -----------*/
+    display: block;
+
+/*----------- Size -----------*/
+    width: 16px;
+    height: 16px;
+    margin: auto .5rem;
+}
+
+.like-ver{
+/*----------- Flexbox -----------*/
+    display: flex;
+    flex-flow: row wrap;
+
+/*----------- Size -----------*/
+    margin-left: 1rem;
+
+/*----------- Font -----------*/
+    font-family: 'Viga', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #989393;
+}
+
+.texto-ver{
+/*----------- Font -----------*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180.52%;
+    font-family: 'Viga', sans-serif;
+
+/*----------- Size -----------*/
+    margin-top: 2rem;
+}
+
+/*##################################### Ajuste de la imagen superior #####################################*/
+@supports(object-fit: cover){
+    .imagen-ver img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+/*##################################### Breackpoints #####################################*/
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and (min-width: 769px){
+    .main-ver{
+        max-width: 1000px;
+        margin: 0 auto;
+        box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+    }
+
+    .titulo-ver{
+        margin-top: 2rem;
+    }
+
+    .contenido-ver{
+        
+        padding: 1rem;
+    }
+}
