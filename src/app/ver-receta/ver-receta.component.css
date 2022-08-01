@@ -22,9 +22,12 @@ h1{
 }
 
 .contenido-ver{
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+
+/*----------- Size -----------*/
     margin-top: 2rem;
 }
 
@@ -35,94 +38,133 @@ h1{
 }
 
 .usuario-ver{
-    background-color: #e9f9f2;
+/*----------- Border -----------*/
     border-radius: 18.5px;
-    padding: .5rem;
+
+/*----------- Color -----------*/
+    background-color: #e9f9f2;
+    color: #15BE77;
+
+/*----------- Font -----------*/
     text-align: center;
     font-family: 'Viga', sans-serif;
-    color: #15BE77;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 131.02%;
     margin: 0 .25rem;
+
+/*----------- Size -----------*/
+    padding: .5rem;
 }
 
 .lugar-ver{
+/*----------- Color -----------*/
     background-color: #e9f9f2;
+    color: #15BE77;
+
+/*----------- Border -----------*/
     border-radius: 18.5px;
-    padding: .5rem;
+
+/*----------- Font -----------*/
     text-align: center;
     font-family: 'Viga', sans-serif;
-    color: #15BE77;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 131.02%;
+
+/*----------- Size -----------*/
     margin: auto .25rem;
+    padding: .5rem;
 }
 
 .ico-ver{
+/*----------- Display -----------*/
     display: block;
+
+/*----------- Size -----------*/
     width: 17px;
     height: 20px;
     margin: .2rem auto;
 }
 
 .favorito-ver{
+/*----------- Color -----------*/
     background-color: #ffe8e8;
+    color: #ff1d1d;
+
+/*----------- Border -----------*/
     border-radius: 18.5px;
+
+/*----------- Size -----------*/
     padding: .5rem;
+    margin: auto .25rem;
+
+/*----------- Font -----------*/
     text-align: center;
     font-family: 'Viga', sans-serif;
-    color: #ff1d1d;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 131.02%;
-    margin: auto .25rem;
 }
 
 .datos-ver{
     display: flex;
     flex-flow: row wrap;
-
     margin-top: 2rem;
 }
 
 .icop-ver{
+/*----------- Display -----------*/
     display: block;
+
+/*----------- Size -----------*/
     width: 20px;
     height: 20px;
     margin: auto .5rem;
 }
 
 .precio-ver{
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: row wrap;
 
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.5px;
+
+/*----------- Color -----------*/
     color: #989393;
+
+/*----------- Size -----------*/
     margin-right: 1rem;
 }
 
 .icol-ver{
+/*----------- Display -----------*/
     display: block;
+
+/*----------- Size -----------*/
     width: 16px;
     height: 16px;
     margin: auto .5rem;
-
 }
 
 .like-ver{
+/*----------- Flexbox -----------*/
     display: flex;
     flex-flow: row wrap;
+
+/*----------- Size -----------*/
     margin-left: 1rem;
+
+/*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -133,14 +175,18 @@ h1{
 }
 
 .texto-ver{
+/*----------- Font -----------*/
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 180.52%;
     font-family: 'Viga', sans-serif;
+
+/*----------- Size -----------*/
     margin-top: 2rem;
 }
 
+/*##################################### Ajuste de la imagen superior #####################################*/
 @supports(object-fit: cover){
     .imagen-ver img{
         height: 100%;
@@ -148,6 +194,8 @@ h1{
         object-position: center center;
     }
 }
+
+/*##################################### Breackpoints #####################################*/
 
 /*
 Tamaños a considerar para breakpoints
@@ -157,8 +205,6 @@ Tamaños a considerar para breakpoints
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
-
-/*##################################### Breackpoints #####################################*/
 
 @media screen and (min-width: 769px){
     .main-ver{
