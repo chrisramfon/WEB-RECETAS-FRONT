@@ -6,26 +6,6 @@
         <input type="text" placeholder="¿Qué receta buscas?">
     </div>
     <div class="recetas-explore">
-        <div class="box-explore"><!-- contenedor de publicidad -->
-            <div>
-                <img src="/assets/images/explore/descuento.png" alt="">
-            </div>
-            <div>
-                <h2><b class="ad-explore">Ad </b>Ahorra en TuKitchen.com</h2>
-                <h3>Solo durante esta semana ahorra hasta 20% en articulos de repostería.</h3>
-            </div>
-                <button>Ver promoción</button>
-        </div>
-        <div class="box-explore"><!-- contenedor de premium -->
-            <div>
-                <img src="/assets/images/explore/chef.jpg" alt="">
-            </div>
-            <div>
-                <h2><b class="premium-explore">Premium </b> Seguridad en la cocina</h2>
-                <h3>Aprende sobre seguridad en la cocina con el chef pepín.</h3>
-            </div>
-                <button>Ver publicación</button>
-        </div>
         <div class="box-explore" *ngFor = "let Re of List"><!-- El ngfor va en este div -->
             <div>
                 <img src="/assets/images/explore/default.png" alt="">
