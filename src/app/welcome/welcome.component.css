@@ -31,7 +31,7 @@ input{
   color: #53E88B;
 
 /*----------- Border -----------*/
-  border-radius: 15px;
+  border-radius: 60px;
   border: 0px;
 
 /*----------- Size -----------*/
@@ -54,7 +54,7 @@ input{
     color: white;
 
   /*----------- Border -----------*/
-    border-radius: 15px;
+  border-radius: 60px;
     border: 0px;
 
   /*----------- Size -----------*/
@@ -86,19 +86,20 @@ input{
 
 .formulario-login{
   width: 91%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .input-login{
-  margin-top: 2rem;
+  margin-top: 7rem;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 }
 
 .logo-login{
+  margin: 3rem auto;
   display: block;
-  margin: auto;
   width: 25rem;
+
 }
 
 
