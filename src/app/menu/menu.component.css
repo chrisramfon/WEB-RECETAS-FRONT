@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+  .form-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(90, 108, 234, 0.1);
+    border-radius: 22px;
+    top: 728px;
+    align-items: center;
+    height: 5rem;
+  }
+
+  .frame{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: baseline;
+    align-items: center;
+  }
+
+  .texto-menu{
+    margin: 0 auto;
+    margin-right: .5rem;
+  }
+
+  .frame:hover{
+    background: #e8f9f2;
+    
+    border-radius: 12px;
+    
+  }
+
+  a{
+    font-family: 'Viga', sans-serif;
+    font-size: 16px;
+    color: transparent;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+
+  a:hover{
+    color: black;
+  }
+
+img{
+  height: 24px;
+  width: 24px;
+  margin: .5rem;
+}
+
+.position-menu{
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 97%;
+
+}
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/*##################################### Breackpoints #####################################*/
+
+@media screen and (min-width: 769px){
+  .position-menu{
+    
+    width: 98%;
+    height: auto;
+  }
+
+  .frame{
+    flex-flow: row wrap;
+    margin: 0 1rem;
+  }
+
+  .form-title{
+    border-radius: 0px;
+    justify-content: start;
+    height: 3rem;
+  }
+
+  a{
+    color: black;
+  }
+
+}

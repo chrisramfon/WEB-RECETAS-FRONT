@@ -1,36 +1,39 @@
+<h1>Agrega una receta </h1>
+<div class="main-register">
+  <div class="form-register">
+    <h2>Agrega una Imagen</h2>
+    <input type="file" [(ngModel)]  = "Recetas.Imagen">
+    <h2>Nombre de la receta</h2>
+  <input type="text" placeholder="Escribe aqui..."[(ngModel)]  = "Recetas.Titulo" >
+  <h2>Ingresa</h2>
+  </div>
+<div class="form-title">
+  <input type="text" class="ct" placeholder="Costo"[(ngModel)]  = "Recetas.Costo">
+  <input type="text" class="ct" placeholder="Tiempo" [(ngModel)]  = "Recetas.Tiempo">
+</div>
+</div>
+<div class="main-register">
+<h2>Ingresa</h2>
+</div>
+<div class="form-title">
+  <select name="" id="" [(ngModel)]  = "Recetas.Dificultad">
+    <option value="">Dificultad</option>
+    <option value="">Baja</option>
+    <option value="">Media</option>
+    <option value="">Alta</option>
+  </select>
+  <input type="text" class="ct" placeholder="Porciones" [(ngModel)]  = "Recetas.Porciones">
 
-
-  <form action="#" method="post">
-    <fieldset>
-      <legend><h2>Nueva Receta</h2></legend>
-      <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Imagen" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-      <div class="input-group">
-       <span><i class="fa fa-envelope-o"></i></span>
-       <input  id="email" placeholder="Nombre de Receta" autocomplete="off" type="email" tabindex="1" autofocus required />
-      </div>
-      <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Tiempo de preparacion" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-       <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Complejidad" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-       <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Porciones" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-     <div class="input-group">
-       <span><i class="fa fa-key"></i></span>
-        <input placeholder="Ingredientes" type="password" disabled>
-      </div>
-      <div class="input-group">
-        <span><i class="fa fa-envelope-o"></i></span>
-        <input  id="email" placeholder="Preparaciòn" autocomplete="off" type="email" tabindex="1" autofocus required />
-       </div>
-     <input type="submit" value="Enviar">
-    </fieldset>
-  </form>
+</div>
+<div class="main-register">
+  <div class="form-register">
+    <h2>Lugar de origen</h2>
+    <input type="text" placeholder="Escribe aqui..." [(ngModel)]  = "Recetas.Lugar">    
+    <h2>Tipo de cocina</h2>
+    <input type="text" placeholder="Escribe aqui..." [(ngModel)]  = "Recetas.Tipo_de_cocina">   
+    <h2>Ingredientes - Instrucciones</h2>
+    <textarea name="" id="" cols="80" rows="10" placeholder="Escribe aquí..."  [(ngModel)]  = "Recetas.Texto"></textarea>
+   <h3>*Nota: puedes agregar recomendaciones en el apartado superior*</h3>
+    <button (click) = "guardarReceta()">Publicar</button>
+  </div>
+</div>

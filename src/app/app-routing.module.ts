@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 //componentes
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { MenuComponent } from './menu/menu.component';
 import { RegisterComponent } from './register/register.component';
 import { ExploreComponent } from './explore/explore.component';
 import { VerRecetaComponent } from './ver-receta/ver-receta.component';

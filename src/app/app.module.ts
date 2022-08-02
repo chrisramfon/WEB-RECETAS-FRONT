@@ -10,16 +10,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { RegisterComponent } from './register/register.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 import { ExploreComponent } from './explore/explore.component';
 import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 
 //Servicios
 import { LoginService } from './Services/login.service';
-import { MenuComponent } from './menu/menu.component';
+import { UsuarioService } from './Services/usuario.service';
 import { ExploreService } from './Services/explore.service';
 import { VerRecetaService } from './Services/ver-receta.service';
-import { HomeComponent } from './home/home.component';
 import { VerFavoritosService } from './Services/ver-favoritos.service';
 
 
@@ -44,6 +45,7 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
   ],
   providers: [
     LoginService,
+    UsuarioService,
     ExploreService,
     VerRecetaService,
     VerFavoritosService
