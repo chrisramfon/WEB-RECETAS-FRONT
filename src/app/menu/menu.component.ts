@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  isLogged
+
   constructor() { }
 
   ngOnInit(): void {
+    this.validaLog()
+  }
+
+  validaLog(){
+    if(localStorage.getItem('Token').length <= 0){
+      this.isLogged = false
+    }else{
+      this.isLogged = true
+    }
   }
 
 }

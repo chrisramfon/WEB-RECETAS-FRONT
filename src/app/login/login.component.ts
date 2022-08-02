@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private Log: LoginService) { }
 
   ngOnInit(): void {
+    this.validatoken()
   }
 
   login(){
@@ -24,10 +25,21 @@ export class LoginComponent implements OnInit {
       console.log(res)
       localStorage.setItem('Token', res.Token)
       alert(res.Mensaje)
+      this.reload()
       this.router.navigate(['home'])
     }, err=>{
       console.log(err)
     })
   }  
+
+  reload(){
+    window.location.reload()
+  }
+
+  validatoken(){
+    if(localStorage.getItem('Token').length > 0){
+      this.router.navigate(['home'])
+    }
+  }
 
 }
