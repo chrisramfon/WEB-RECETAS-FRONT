@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RecetasService {
 
-  private recetaURL = "http://127.0.0.1:3000/Receta"
+  private recetaURL = "http://127.0.0.1:3000/receta"
 
   constructor(private http: HttpClient) { }
 

@@ -41,6 +41,7 @@ input{
   height: 4rem;
   font-family: 'Viga', sans-serif;
   padding: 0 1.5rem;
+  width: 23rem;
 }
 .ct{
   width: 18rem;
@@ -48,10 +49,15 @@ input{
 }
 
 h1{
+  /*----------- Font -----------*/
   font-family: 'Viga', sans-serif;
-  text-align: center;
-  margin-bottom: 2rem;
-  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+
+  /*----------- Size -----------*/
+  line-height: 131.02%;
+  margin-bottom: 0;
 }
 h2{
 font-family: 'Viga';
@@ -124,4 +130,104 @@ select{
   padding: 0 1.5rem;
   width: 18rem;
 
+}
+
+
+
+
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% nuevo css %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.main-formulario{
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.title-formulario{
+/*----------- Background -----------*/
+background-image: url("../login/img/fondo-login.png");
+
+/*----------- Flexbox -----------*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+
+/*----------- Size -----------*/
+    margin-bottom: 2.3rem;
+    height: 11rem;
+
+}
+
+.busqueda{
+  /*----------- Other -----------*/
+      background: #fef6ed;
+      mix-blend-mode: normal;
+  
+  /*----------- Border -----------*/
+      border-radius: 15px;
+      border: 0;
+  
+  /*----------- Size -----------*/
+      height: 4rem;
+      width: 20rem;
+  }
+
+.busqueda::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/*----------- Font -----------*/
+  text-align: center;
+  color: #DA6317;
+  font-family: 'Viga', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+    
+/*----------- Color -----------*/
+  opacity: 1;
+  opacity: 0.4;
+
+}
+
+.form-formulario{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 2.7rem;
+}
+
+.center{
+  margin: 0 auto;
+  display: block;
+}
+
+.receta-formulario{
+  width: 23rem;
+}
+
+.button-formulario{
+  margin-top: 2rem;
+}
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/*##################################### Breackpoints #####################################*/
+@media screen and (min-width: 769px){
+  .main-formulario{
+    max-width: 1000px;
+  }
+
+  .form-formulario{
+    box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  }
 }
