@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 //componentess
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { MenuComponent } from './menu/menu.component';
 
 //componentes
 
@@ -11,6 +12,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'formulario', component:FormularioComponent},
+  {path:'menu', component:MenuComponent},
   //Rutas por defecto, dejar al final
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'},

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioService } from '../Services/usuario.service';
 
 @Component({
   selector: 'app-register',
@@ -6,21 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  email: string;
-  password: string;
-  passwordError: boolean;
+  usuario={
+    id: "",
+    Usuario: "",
+    Pass: "",
+    Status: "",
+    Token: (localStorage.getItem('Token'))
+}
 
-  constructor() {}
-
-  registrar() { //accion que toma el boton en el html //aqui tambien se declara el servicio
-    const user = { email: this.email, password: this.password };
-
-  }
-
+  constructor(private usuService: UsuarioService) {}
 
   ngOnInit(): void {
   }
 
-
+  registrar() { //accion que toma el boton en el html //aqui tambien se declara el servicio
+    this.usuario.id = this.usuario.id;
+    this.usuService.postUsu(this.usuario).subscribe(res=>{
+      alert("Usuario registrado");
+    }, err=>console.log(err));
+  }
 
 }
