@@ -41,3 +41,13 @@ img{
 
 }
 
+.position-menu{
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
