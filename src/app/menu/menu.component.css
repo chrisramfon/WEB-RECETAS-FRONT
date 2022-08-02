@@ -13,10 +13,23 @@
     height: 5rem;
   }
 
+  .frame{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: baseline;
+    align-items: center;
+  }
+
+  .texto-menu{
+    margin: 0 auto;
+    margin-right: .5rem;
+  }
+
   .frame:hover{
     background: #e8f9f2;
-    width: 105px;
-    height: 44px;
+    
     border-radius: 12px;
     
   }
@@ -37,8 +50,7 @@
 img{
   height: 24px;
   width: 24px;
-  margin: 1rem;
-
+  margin: .5rem;
 }
 
 .position-menu{
@@ -46,8 +58,41 @@ img{
   bottom: 0;
   overflow: hidden;
   z-index: 10;
-  width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  width: 97%;
+
+}
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/*##################################### Breackpoints #####################################*/
+
+@media screen and (min-width: 769px){
+  .position-menu{
+    
+    width: 98%;
+    height: auto;
+  }
+
+  .frame{
+    flex-flow: row wrap;
+    margin: 0 1rem;
+  }
+
+  .form-title{
+    border-radius: 0px;
+    justify-content: start;
+    height: 3rem;
+  }
+
+  a{
+    color: black;
+  }
+
 }

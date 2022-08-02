@@ -45,7 +45,7 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
   ],
   providers: [
     LoginService,
-    UsuarioService
+    UsuarioService,
     ExploreService,
     VerRecetaService,
     VerFavoritosService
