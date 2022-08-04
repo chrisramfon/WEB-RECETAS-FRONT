@@ -1,0 +1,20 @@
+<div class="main-explore">
+    <div class="title-explore">
+        <h1>Favoritos</h1>
+    </div>
+    <div>
+        <input type="text" placeholder="¿Qué receta buscas?">
+    </div>
+    <div class="recetas-explore">
+        <div class="box-explore" *ngFor = "let Re of List"><!-- El ngfor va en este div -->
+            <div>
+                <img src="/assets/images/explore/default.png" alt="">
+            </div>
+            <div>
+                <h2>{{Re.Titulo}}</h2>
+                <h3>{{Re.Usuario}}</h3>
+            </div>
+                <button routerLink = "../ver-receta/{{Re.id}}">Ver receta</button>
+        </div>
+    </div>
+</div>

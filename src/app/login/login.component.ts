@@ -22,7 +22,9 @@ export class LoginComponent implements OnInit {
       if(!res.Token) {alert(`${res.Mensaje}`); throw res.Mensaje}
 
       console.log(res)
+      localStorage.setItem('Token', res.Token)
       alert(res.Mensaje)
+      this.router.navigate(['home'])
     }, err=>{
       console.log(err)
     })
