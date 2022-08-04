@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:'formulario', component:FormularioComponent},
   {path:'register', component:RegisterComponent},
   {path:'welcome', component:WelcomeComponent},
-  {path:'profile', component:ProfileComponent},
+  {path:'myprofile', component:ProfileComponent},
   {path: 'ver-receta/:id', component: VerRecetaComponent},
   {path: 'explore', component:ExploreComponent},
   {path: 'home', component: HomeComponent},
