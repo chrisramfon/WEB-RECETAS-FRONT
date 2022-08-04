@@ -10,24 +10,24 @@ h1{
 
 
 button{
-/*----------- Color -----------*/
+/*----------- Rectangle -----------*/
   background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
-  color: white;
-
-/*----------- Border -----------*/
-  border-radius: 15px;
-  border: 0px;
-
-/*----------- Size -----------*/
-  height: 2rem;
-  width: 8rem;
-  margin: 2rem ;
+  border-radius: 17.5px;
+  width: 79px;
+  height: 29px;
+  border: 0;
 
 /*----------- Font -----------*/
-  font-family: 'Viga';
+  font-family: 'Viga', sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
 
+/*----------- Size -----------*/
+  margin: auto 0;
 }
 
 .main-profile{
@@ -38,6 +38,7 @@ button{
 
 /*----------- Size -----------*/
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 
@@ -57,21 +58,30 @@ button{
 
 
 h2{
+/*----------- Font -----------*/
   font-family: 'Viga', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 131.02%;
   color: #09051C;
+
+/*----------- Size -----------*/
+  width: 10rem;
 }
 
 h3{
+/*----------- Font -----------*/
+  font-family: 'Viga', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 9px;
   letter-spacing: 0.5px;
   color: #A69B9B;
+
+/*----------- Size -----------*/
+  width: 10rem;
 }
 
 
@@ -139,24 +149,75 @@ align-items: center;
   }
 
   .recetas-explore{
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: flex-start;
-      margin-top: 1rem;
+/*----------- Flexbox -----------*/
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
 
+/*----------- Size -----------*/
+  margin-top: 2.3rem;
   }
 
-  .box-explore{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
-      border-radius: 22px;
-      margin-bottom: 1rem;
+.box-explore{
+/*----------- Flexbox -----------*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+/*----------- Border -----------*/
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 22px;
+
+/*----------- Size -----------*/
+  margin-bottom: 1rem;
+}
+
+/*##################################### Imagen de perfil #####################################*/
+
+.imagen-profile img{
+  width: 100%;
+  height: auto;
+}
+
+/*##################################### Bio #####################################*/
+
+.bio-profile{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180.52%;
+  font-family: 'Viga', sans-serif;
+  color: black;
+
+}
+
+/*##################################### Seguidores #####################################*/
+
+.seguidores-profile{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contseg-profile{
+  margin-right: 1rem;
+}
+
+/*##################################### Receta #####################################*/
+
+.recimg{
+  width: 62px;
+  height: 62px;
+  mix-blend-mode: normal;
+  border-radius: 16px;
+}
+
+/*##################################### Ajuste de la imagen de perfil #####################################*/
+@supports(object-fit: cover){
+  .imagen-profile img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
   }
-
-
-
-
-
+}
 

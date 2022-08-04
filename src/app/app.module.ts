@@ -24,6 +24,7 @@ import { UsuarioService } from './Services/usuario.service';
 import { ExploreService } from './Services/explore.service';
 import { VerRecetaService } from './Services/ver-receta.service';
 import { VerFavoritosService } from './Services/ver-favoritos.service';
+import { PerfilService } from './Services/perfil.service';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
     UsuarioService,
     ExploreService,
     VerRecetaService,
-    VerFavoritosService
+    VerFavoritosService,
+    PerfilService
   ],
   bootstrap: [AppComponent]
 })

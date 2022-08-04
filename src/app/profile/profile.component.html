@@ -1,21 +1,25 @@
 
 
 <div class="main-profile">
-  <div><img src="/assets/images/profile/user1.jpeg" alt="" class="fondo-profile"></div>
+  <div class="imagen-profile">
+    <img src="/assets/images/profile/user1.jpeg" alt="" class="fondo-profile">
+  </div>
   <div class="encabezado-profile">
-    <h1>Jafet_ob</h1>
-    <h3>barenca99jafet99@gmail.com</h3>
-    <h2>Tus recetas</h2>
-
+    <h1>{{Profile.Usuario}}</h1>
+    <h3>{{Profile.Correo}}</h3>
+    <h3>{{Profile.Nombre}}</h3>
   </div> <!-- Fin contenedor del encabezado-->
-
-
-  <br>
-
+  <div>
+    <p class="bio-profile">{{Profile.Bio}}</p>
+  </div>
+  <div class="seguidores-profile">
+    <div class="contseg-profile"><p class="bio-profile">100 </p><h3>Seguidos</h3></div>
+    <div><p class="bio-profile">600</p><h3>Seguidores</h3></div>
+  </div>
   <div class="recetas-explore">
     <div class="box-explore"><!-- El ngfor va en este div -->
         <div>
-            <img src="/assets/images/profile/platillo1.jpeg" alt="" class="fondo-platillo">
+            <img src="/assets/images/profile/platillo1.jpeg" alt="" class="recimg">
         </div>
         <div>
             <h2>Tacos</h2>
@@ -23,56 +27,6 @@
         </div>
             <button>Ver receta</button>
     </div>
-</div>
-
-
-<div class="recetas-explore">
-  <div class="box-explore"><!-- El ngfor va en este div -->
-      <div>
-          <img src="/assets/images/profile/platillo1.jpeg" alt="" class="fondo-platillo">
-      </div>
-      <div>
-        <h2>Pizza</h2>
-        <h3>4 porciones </h3>
-      </div>
-          <button>Ver receta</button>
   </div>
-</div>
-
-
-
-
-<div class="recetas-explore">
-  <div class="box-explore"><!-- El ngfor va en este div -->
-      <div>
-          <img src="/assets/images/profile/platillo1.jpeg" alt="" class="fondo-platillo">
-      </div>
-      <div>
-        <h2>Pozole</h2>
-        <h3>4 porciones </h3>
-      </div>
-          <button>Ver receta</button>
-  </div>
-</div>
-
-
-
-
-<div class="recetas-explore">
-  <div class="box-explore"><!-- El ngfor va en este div -->
-      <div>
-          <img src="/assets/images/profile/platillo1.jpeg" alt="" class="fondo-platillo">
-      </div>
-      <div>
-        <h2>Pasta brasil</h2>
-        <h3>4 porciones </h3>
-      </div>
-          <button>Ver receta</button>
-  </div>
-</div>
-
-
-
-
 </div><!--termina profile-->
 
