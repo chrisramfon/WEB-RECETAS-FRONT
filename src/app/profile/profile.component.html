@@ -1,5 +1,3 @@
-
-
 <div class="main-profile">
   <div class="imagen-profile">
     <img src="/assets/images/profile/user1.jpeg" alt="" class="fondo-profile">
@@ -17,15 +15,15 @@
     <div><p class="bio-profile">{{Seguidores.Seguidores}}</p><h3>Seguidores</h3></div>
   </div>
   <div class="recetas-explore">
-    <div class="box-explore"><!-- El ngfor va en este div -->
+    <div class="box-explore" *ngFor = "let Re of Recetas"><!-- El ngfor va en este div -->
         <div>
             <img src="/assets/images/profile/platillo1.jpeg" alt="" class="recimg">
         </div>
         <div>
-            <h2>Tacos</h2>
-            <h3>4 porciones </h3>
+            <h2>{{Re.Titulo}}</h2>
+            <h3>{{Re.Usuario}}</h3>
         </div>
-            <button>Ver receta</button>
+        <button routerLink = "../ver-receta/{{Re.id}}">Ver receta</button>
     </div>
   </div>
 </div><!--termina profile-->

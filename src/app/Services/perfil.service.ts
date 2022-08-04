@@ -9,6 +9,7 @@ export class PerfilService {
   private buscarULR = 'http://127.0.0.1:3000/perfil'
   private seguidoresURL = 'http://127.0.0.1:3000/perfil/Seguidores'
   private seguidosURL = 'http://127.0.0.1:3000/perfil/Seguidos'
+  private recetasURL = 'http://127.0.0.1:3000/receta/Usuario'
 
   constructor(private http: HttpClient) { }
 
@@ -22,5 +23,9 @@ export class PerfilService {
 
   seguidosPerfil(id){
     return this.http.post<any>(this.seguidosURL, id)
+  }
+
+  listarecetasPerfil(id){
+    return this.http.post<any>(this.recetasURL, id)
   }
 }

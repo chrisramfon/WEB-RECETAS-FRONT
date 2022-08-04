@@ -9,10 +9,11 @@ import { PerfilService } from '../Services/perfil.service';
 export class ProfileComponent implements OnInit {
 
   EnvioP = {Token: localStorage.getItem('Token')}
-  EnvioS = {id: ""}
+  EnvioID = {id: ""}
   Profile
   Seguidores = {Seguidores: 0}
   Seguidos = {Seguidos: 0}
+  Recetas
 
   constructor(private perfil: PerfilService) { }
 
@@ -24,9 +25,10 @@ export class ProfileComponent implements OnInit {
     this.perfil.buscaPerfil(this.EnvioP).subscribe(
       res=>{
         this.Profile = res[0]
-        this.EnvioS.id = this.Profile.id
-        this.seguidoresPerfil(this.EnvioS)
-        this.seguidoresPerfil(this.EnvioS)
+        this.EnvioID.id = this.Profile.id
+        this.seguidoresPerfil(this.EnvioID)
+        this.seguidoresPerfil(this.EnvioID)
+        this.listarecetasPerfil(this.EnvioID)
       }, 
       err=>{console.log(err)})
   }
@@ -43,5 +45,13 @@ export class ProfileComponent implements OnInit {
       res=>{
         this.Seguidos = res[0]
       },err=>{console.log(err)})
+  }
+
+  listarecetasPerfil(id){
+    this.perfil.listarecetasPerfil(id).subscribe(
+      res=>{
+        this.Recetas = res
+      }, err=>{console.log(err)}
+    )
   }
 }
