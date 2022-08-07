@@ -19,6 +19,10 @@
             <p class="bio-profile">{{Seguidores.Seguidores}}</p>
             <h3>Seguidores</h3>
         </div>
+        <div *ngIf="!(esMismo == 5)">
+            <div *ngIf="esSeguido else elseBlock"><button class="btnSeguir-profile" (click) = "dejarseguirPerfil()">Dejar de seguir</button></div>
+            <ng-template #elseBlock><div><button (click) = "seguirPerfil()">Seguir</button></div></ng-template>
+        </div>
     </div>
     <div class="recetas-explore">
         <div class="box-explore" *ngFor = "let Re of Recetas"><!-- El ngfor va en este div -->

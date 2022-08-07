@@ -148,6 +148,12 @@ h3 {
     margin-left: 1rem;
 }
 
+.btnSeguir-profile{
+    display: block;
+    margin: auto 0;
+    
+}
+
 /*##################################### Receta #####################################*/
 
 .recimg {
@@ -219,4 +225,11 @@ h3 {
         width: 100%;
         margin-top: 3rem;
     }
+
+    .btnSeguir-profile{
+        display: block;
+        margin: auto 0;
+        margin-left: 2rem;
+    }
+    
 }

@@ -16,6 +16,7 @@ export class VerPerfilComponent implements OnInit {
     this.seguidoresPerfil()
     this.seguidosPerfil()
     this.listarecetasPerfil()
+    this.validaseguido()
   }
 
   Envio = {id: this.Aroute.snapshot.paramMap.get('id')}
@@ -23,6 +24,9 @@ export class VerPerfilComponent implements OnInit {
   Seguidores = {Seguidores: 0}
   Seguidos = {Seguidos: 0}
   Recetas
+  EnvioVS = {Token: localStorage.getItem('Token'), id: this.Aroute.snapshot.paramMap.get('id')}
+  esSeguido = true
+  esMismo = 1
 
   buscarPerfil(){
     this.perfil.buscaPerfil(this.Envio).subscribe(
@@ -53,5 +57,31 @@ export class VerPerfilComponent implements OnInit {
         this.Recetas = res
       }, err => (console.log(err))
     )
+  }
+
+  validaseguido(){
+    this.perfil.validaseguidoPerfil(this.EnvioVS).subscribe(
+      res=>{
+        this.esSeguido = res.Seguido
+        this.esMismo = res.rows
+        console.log(this.esSeguido)
+        console.log(this.esMismo)
+      },err=>{console.log(err)})
+  }
+
+  seguirPerfil(){
+    this.perfil.seguirPerfil(this.EnvioVS).subscribe(
+      res => {
+        this.validaseguido()
+        this.seguidoresPerfil()
+    }, err => {console.log(err)})
+  }
+
+  dejarseguirPerfil(){
+    this.perfil.dejarseguirPerfil(this.EnvioVS).subscribe(
+      res => {
+        this.validaseguido()
+        this.seguidoresPerfil()
+    },err => {console.log(err)})
   }
 }
