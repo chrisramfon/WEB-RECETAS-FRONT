@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private Log: LoginService) { }
 
   ngOnInit(): void {
+    this.validalogin()
   }
 
   login(){
@@ -29,5 +30,11 @@ export class LoginComponent implements OnInit {
       console.log(err)
     })
   }  
+
+  validalogin(){
+    if(localStorage.getItem('Token').length > 0){
+      this.router.navigate(['home'])
+    }
+  }
 
 }
