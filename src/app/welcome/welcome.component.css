@@ -25,13 +25,13 @@ input{
 
   }
 
-button{
+.btn-gris{
 /*----------- Color -----------*/
-  background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
-  color: white;
+  background: linear-gradient(ECF0F3);
+  color: #53E88B;
 
 /*----------- Border -----------*/
-  border-radius: 15px;
+  border-radius: 60px;
   border: 0px;
 
 /*----------- Size -----------*/
@@ -44,7 +44,30 @@ button{
   font-style: normal;
   font-size: 16px;
 
+
 }
+
+
+.btn-verde{
+  /*----------- Color -----------*/
+    background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+    color: white;
+
+  /*----------- Border -----------*/
+  border-radius: 60px;
+    border: 0px;
+
+  /*----------- Size -----------*/
+    height: 3rem;
+    width: 11rem;
+    margin: 4rem auto;
+
+  /*----------- Font -----------*/
+    font-family: 'Viga';
+    font-style: normal;
+    font-size: 16px;
+
+  }
 
 .main-login{
 /*----------- Flexbox -----------*/
@@ -63,19 +86,20 @@ button{
 
 .formulario-login{
   width: 91%;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 .input-login{
-  margin-top: 2rem;
+  margin-top: 7rem;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 }
 
 .logo-login{
+  margin: 3rem auto;
   display: block;
-  margin: auto;
   width: 25rem;
+
 }
 
 

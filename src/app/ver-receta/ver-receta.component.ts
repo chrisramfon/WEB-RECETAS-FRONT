@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VerRecetaService } from '../Services/ver-receta.service';
-import { ActivatedRoute,Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ver-receta',

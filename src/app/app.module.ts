@@ -9,8 +9,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
-import { RegisterComponent } from './register/register.component';
 import { MenuComponent } from './menu/menu.component';
+import { RegisterComponent } from './register/register.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { ExploreComponent } from './explore/explore.component';
 import { VerRecetaComponent } from './ver-receta/ver-receta.component';
@@ -24,6 +26,8 @@ import { UsuarioService } from './Services/usuario.service';
 import { ExploreService } from './Services/explore.service';
 import { VerRecetaService } from './Services/ver-receta.service';
 import { VerFavoritosService } from './Services/ver-favoritos.service';
+import { PerfilService } from './Services/perfil.service';
+import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
 
 
 @NgModule({
@@ -33,12 +37,15 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
     FormularioComponent,
     RegisterComponent,
     MenuComponent,
+    WelcomeComponent,
+    ProfileComponent,
     ComentariosComponent,
     FollowersComponent,
     ExploreComponent,
     VerRecetaComponent,
     HomeComponent,
-    VerFavoritosComponent
+    VerFavoritosComponent,
+    VerPerfilComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,8 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
     UsuarioService,
     ExploreService,
     VerRecetaService,
-    VerFavoritosService
+    VerFavoritosService,
+    PerfilService
   ],
   bootstrap: [AppComponent]
 })
