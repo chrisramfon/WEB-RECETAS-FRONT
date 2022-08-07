@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { ExploreComponent } from './explore/explore.component';
 import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
+import { ComentariosComponent } from './comentarios/comentarios.component';
+import { FollowersComponent } from './followers/followers.component';
 
 //Servicios
 import { LoginService } from './Services/login.service';
@@ -37,6 +39,8 @@ import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
     MenuComponent,
     WelcomeComponent,
     ProfileComponent,
+    ComentariosComponent,
+    FollowersComponent,
     ExploreComponent,
     VerRecetaComponent,
     HomeComponent,
