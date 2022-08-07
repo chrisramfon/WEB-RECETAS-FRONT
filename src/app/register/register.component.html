@@ -6,10 +6,13 @@
   <div class="formulario-login"> <!-- Contenedor del formulario -->
     <h1>Registrase</h1>
     <div class="input-login"> <!-- Contenedor de inputs -->
-      <input type="text" placeholder="Ingresa Usuraio" >
-      <input type="email" placeholder="Ingresa email" >
-      <input type="password" placeholder="Contraseña" >
-      <button >Registrarme</button>
+      <input type="text" placeholder="Ingresa Usuraio" [(ngModel)]  = "Datos.Usuario">
+      <input type="text" placeholder="Ingresa Nombre" [(ngModel)]  = "Datos.Nombre">
+      <input type="email" placeholder="Ingresa email" [(ngModel)]  = "Datos.Correo">
+      <input type="password" placeholder="Contraseña" [(ngModel)]  = "Datos.Pass">
+      <button (click) = "signin()">Registrarme</button>
     </div> <!-- Fin contenedor de inputs -->
   </div> <!-- Fin contenedor del formulario -->
 </div>
+
+

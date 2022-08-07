@@ -28,6 +28,7 @@ import { VerRecetaService } from './Services/ver-receta.service';
 import { VerFavoritosService } from './Services/ver-favoritos.service';
 import { PerfilService } from './Services/perfil.service';
 import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
+import { SigninService } from './Services/signin.service';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
     ExploreService,
     VerRecetaService,
     VerFavoritosService,
-    PerfilService
+    PerfilService,
+    SigninService
   ],
   bootstrap: [AppComponent]
 })

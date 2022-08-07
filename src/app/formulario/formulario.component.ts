@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RecetasService } from '../Services/recetas.service';
+
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
