@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+.main-comentarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  .form-com{
+    width: 30rem;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+  
+  }
+
+.form-b{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input{
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 22px;
+  margin: 1rem 0;
+  width: 32rem;
+  height: 7rem;
+  font-family: 'Viga', sans-serif;
+  padding: 0 1.5rem;
+}
+
+  h1{
+    font-family: 'Viga', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    
+  }
+.ec-stars-wrapper {
+	font-size: 0;
+	
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	font-size: 32px;
+	font-size: 6rem;
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(246, 144, 11);
+}
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
+  .logo-login{
+    display: block;
+    margin: auto;
+    width: 30rem;
+    width: 25rem;
+  }
+
+  .fondo-login{
+    background-image: url("/img/FOND.png");
+    height: 22rem;
+   }
+   button{
+    background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
+    border-radius: 15px;
+    width: 233px;
+    height: 57px;
+    border: 0;
+    margin: 3rem auto;
+    font-family: 'Viga', sans-serif;
+    color: white;
+  }
+
+  .button-1{
+    background: white;
+    border-radius: 15px;
+    width: 82px;
+    height: 57px;
+    border: 0;
+    margin: 3rem auto;
+    font-family: 'Viga', sans-serif;
+    color: #53E88B;
+  }

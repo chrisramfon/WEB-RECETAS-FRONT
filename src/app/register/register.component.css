@@ -1,54 +1,107 @@
+/*##################################### Imports #####################################*/
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
-.main-register{
-  
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-.form-register{
-  width: 30rem;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-
+h1{
+  text-align: center;
+  font-family: 'Viga', sans-serif;
+  font-size: 20px;
 }
 
 input{
-  background: #FFFFFF;
-  border: 1px solid #F4F4F4;
-  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
-  border-radius: 15px;
-  margin: 1rem 0;
-  height: 3rem;
-  font-family: 'Viga', sans-serif;
-  padding: 0 1.5rem;
-}
+  /*----------- Font -----------*/
+    font-family: 'Viga', sans-serif;
 
-h1{
-  font-family: 'Viga', sans-serif;
-  text-align: center;
-  margin-bottom: 2rem;
-}
+  /*----------- Size -----------*/
+    margin: .5rem 0;
+    padding: .5rem 1.6rem;
+    height: 2.7rem;
+
+  /*----------- Border -----------*/
+    border-radius: 60px;
+    border: 1px solid #F4F4F4;
+
+  /*----------- Shadow -----------*/
+    box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+
+  }
 
 button{
+/*----------- Color -----------*/
   background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
-  border-radius: 15px;
-  height: 3rem;
-  width: 10rem;
-  border: 0;
-  margin: 0 auto;
-  font-family: 'Viga', sans-serif;
   color: white;
+
+/*----------- Border -----------*/
+  border-radius: 15px;
+  border: 0px;
+
+/*----------- Size -----------*/
+  height: 3rem;
+  width: 11rem;
+  margin: 4rem auto;
+
+/*----------- Font -----------*/
+  font-family: 'Viga';
+  font-style: normal;
+  font-size: 16px;
+
 }
 
-.logo-register{
-  background-image: url(./img/fondo-login.png);
-  height: 22rem;
-
+.main-login{
+/*----------- Flexbox -----------*/
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 93%;
+/*----------- Size -----------*/
+  margin: 0 auto;
 }
 
+.fondo-login{
+ background-image: url("./img/fondo-login.png");
+ height: 22rem;
+}
+
+.formulario-login{
+  width: 91%;
+  margin: 4rem auto;
+}
+
+.input-login{
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.logo-login{
+  display: block;
+  margin: auto;
+  width: 25rem;
+}
+
+
+/*##################################### Breackpoints #####################################*/
+@media screen and (min-width: 769px){
+
+  .main-login{
+    flex-flow: row;
+    margin-top: 10rem;
+    max-width: 1000px;
+  }
+
+  .fondo-login{
+    margin-right: 2rem;
+  }
+
+  input{
+    max-width: 900px;
+  }
+}
+
+/*
+Tamaños a considerar para breakpoints
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
