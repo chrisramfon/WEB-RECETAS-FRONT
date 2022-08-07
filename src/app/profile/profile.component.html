@@ -1,0 +1,31 @@
+<div class="main-profile">
+  <div class="imagen-profile">
+    <img src="/assets/images/profile/user1.jpeg" alt="" class="fondo-profile">
+  </div>
+  <div class="encabezado-profile">
+    <h1>{{Profile.Usuario}}</h1>
+    <h3>{{Profile.Correo}}</h3>
+    <h3>{{Profile.Nombre}}</h3>
+  </div> <!-- Fin contenedor del encabezado-->
+  <div>
+    <p class="bio-profile">{{Profile.Bio}}</p>
+  </div>
+  <div class="seguidores-profile">
+    <div class="contseg-profile"><p class="bio-profile">{{Seguidos.Seguidos}} </p><h3>Seguidos</h3></div>
+    <div><p class="bio-profile">{{Seguidores.Seguidores}}</p><h3>Seguidores</h3></div>
+    <div><p class="editar-profile">Editar</p></div>
+  </div>
+  <div class="recetas-explore">
+    <div class="box-explore" *ngFor = "let Re of Recetas"><!-- El ngfor va en este div -->
+        <div>
+            <img src="/assets/images/profile/platillo1.jpeg" alt="" class="recimg">
+        </div>
+        <div>
+            <h2>{{Re.Titulo}}</h2>
+            <h3>{{Re.Usuario}}</h3>
+        </div>
+        <button routerLink = "../ver-receta/{{Re.id}}">Ver receta</button>
+    </div>
+  </div>
+</div><!--termina profile-->
+

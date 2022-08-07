@@ -14,6 +14,7 @@ h1{
 .main-ver{
     display: flex;
     flex-flow: column wrap;
+    margin-bottom: 5rem;
 }
 
 .imagen-ver img{
@@ -212,6 +213,7 @@ Tamaños a considerar para breakpoints
         max-width: 1000px;
         margin: 0 auto;
         box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+        margin-bottom: 5rem;
     }
 
     .titulo-ver{

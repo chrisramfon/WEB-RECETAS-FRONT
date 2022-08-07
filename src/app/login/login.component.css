@@ -54,6 +54,7 @@ button{
   width: 93%;
 /*----------- Size -----------*/  
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .fondo-login{
