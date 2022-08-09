@@ -15,6 +15,7 @@ import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 import { HomeComponent } from './home/home.component';
 import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
+import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 
 
 
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: 'ver-perfil/:id', component: VerPerfilComponent},
   {path: 'explore', component:ExploreComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'editar-perfil', component: EditarPerfilComponent},
   {path: 'ver-favoritos', component: VerFavoritosComponent},
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'}
