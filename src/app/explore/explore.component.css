@@ -1,6 +1,11 @@
 /*##################################### Imports #####################################*/
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
+a{
+    text-decoration: none;
+    
+}
+
 h1{
 /*----------- Font -----------*/
     font-family: 'Viga', sans-serif;
