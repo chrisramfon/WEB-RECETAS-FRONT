@@ -7,6 +7,10 @@ h1{
   font-size: 25px;
 }
 
+a{
+  text-decoration: none;
+}
+
 button{
 /*----------- Rectangle -----------*/
   background: linear-gradient(98.81deg, #53E88B -0.82%, #15BE77 101.53%);
@@ -155,6 +159,10 @@ align-items: center;
   height: 62px;
   mix-blend-mode: normal;
   border-radius: 16px;
+}
+
+.editar-profile{
+  margin: 1rem 0;
 }
 
 /*##################################### Ajuste de la imagen de perfil #####################################*/

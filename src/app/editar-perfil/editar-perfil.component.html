@@ -1,0 +1,18 @@
+
+<div class="main-login"><!-- Contenedor principal -->
+    <div class="fondo-login"> <!-- Contenedor del logo -->
+        <img src="/assets/images/LOGOTIP.png" class="logo-login">
+    </div> <!-- Fin contenedor del logo -->
+    <div class="formulario-login"> <!-- Contenedor del formulario -->
+      <h1>Editar mi perfil</h1>
+      <div class="input-login"> <!-- Contenedor de inputs -->
+        <input type="text" placeholder="Ingresa Nombre" [(ngModel)] = "Perfil.Nombre">
+        <input type="email" placeholder="Ingresa email" [(ngModel)] = "Perfil.Correo">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Biografía" [(ngModel)] = "Perfil.Bio"></textarea>
+        <button (click) = "editarPerfil()">Guardar</button>
+      </div> <!-- Fin contenedor de inputs -->
+    </div> <!-- Fin contenedor del formulario -->
+  </div>
+  
+  
+  
