@@ -22,14 +22,14 @@ import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'welcome', pathMatch:'full'}, //siempre que inice es a welcome
-  {path:'login', component:LoginComponent},
-  {path:'formulario', component:FormularioComponent},
-  {path:'comentarios', component:ComentariosComponent},
-  {path:'followers', component:FollowersComponent},
-  {path:'register', component:RegisterComponent},
-  {path:'welcome', component:WelcomeComponent},
-  {path:'myprofile', component:ProfileComponent},
+  {path: '',redirectTo:'welcome', pathMatch:'full'}, //siempre que inice es a welcome
+  {path: 'login', component:LoginComponent},
+  {path: 'formulario', component:FormularioComponent},
+  {path: 'comentarios', component:ComentariosComponent},
+  {path: 'followers', component:FollowersComponent},
+  {path: 'register', component:RegisterComponent},
+  {path: 'welcome', component:WelcomeComponent},
+  {path: 'myprofile', component:ProfileComponent},
   {path: 'ver-receta/:id', component: VerRecetaComponent},
   {path: 'ver-perfil/:id', component: VerPerfilComponent},
   {path: 'explore', component:ExploreComponent},
