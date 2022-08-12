@@ -9,7 +9,7 @@ import { ExploreService } from '../Services/explore.service';
 export class ExploreComponent implements OnInit {
 
   constructor(private receta: ExploreService) { }
-
+  filter = '';
   List
 
   ngOnInit(): void {

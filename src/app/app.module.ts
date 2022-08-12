@@ -31,7 +31,6 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
 import { PerfilService } from './Services/perfil.service';
 import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
 import { SigninService } from './Services/signin.service';
-import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 
 
 @NgModule({
@@ -49,9 +48,7 @@ import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
     VerRecetaComponent,
     HomeComponent,
     VerFavoritosComponent,
-    VerPerfilComponent,
-    EditarPerfilComponent,
-    EditFormularioComponent
+    VerPerfilComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,4 @@ export class RecetasService {
   guardarrecetas(Receta){
     return this.http.post<any>(this.recetaURL, Receta)
   }
-  editarRecetas(Receta){
-    return this.http.post<any>(this.recetaURL, Receta)
-  }
 }
