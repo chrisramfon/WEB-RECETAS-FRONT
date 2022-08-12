@@ -8,14 +8,14 @@ import { RecetasService } from '../Services/recetas.service';
 })
 export class FormularioComponent implements OnInit {
 
-  Recetas = {Imagen: "", Token: (localStorage.getItem('Token')),Titulo:"", Texto:"", Costo:"", Cocina:"", Lugar:"", Tiempo:"", Dificultad:"",Porciones:""}
+  Recetas = {Imagen: "", Token: (localStorage.getItem('Token')),Titulo:"", Texto:"", Ingredientes:"", Costo:"", Cocina:"", Lugar:"", Tiempo:"", Dificultad:"",Porciones:""}
 
   constructor(private recetasService: RecetasService ) { }
 
   ngOnInit(): void {
   }
   guardarReceta(){
-    if(this.Recetas.Titulo == "" || this.Recetas.Costo == ""|| this.Recetas.Tiempo == ""|| this.Recetas.Dificultad == ""|| this.Recetas.Porciones == ""|| this.Recetas.Cocina == ""|| this.Recetas.Texto == ""){
+    if(this.Recetas.Titulo == "" || this.Recetas.Costo == ""|| this.Recetas.Tiempo == ""|| this.Recetas.Dificultad == ""|| this.Recetas.Porciones == ""|| this.Recetas.Cocina == ""|| this.Recetas.Texto == "" || this.Recetas.Ingredientes == ""){
       alert('Falta un campo')
     }else{
       this.recetasService.guardarrecetas(this.Recetas).subscribe(
@@ -31,6 +31,7 @@ export class FormularioComponent implements OnInit {
     this.Recetas.Imagen = ""
     this.Recetas.Titulo = ""
     this.Recetas.Texto = ""
+    this.Recetas.Ingredientes = ""
     this.Recetas.Costo = ""
     this.Recetas.Cocina = ""
     this.Recetas.Lugar = ""
