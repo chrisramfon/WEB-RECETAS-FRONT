@@ -12,7 +12,7 @@ export class VerRecetaComponent implements OnInit {
   constructor(private receta: VerRecetaService, private Aroute: ActivatedRoute) { }
 
   //Guarda la información de la receta
-  Res = {id: "", Titulo: "", Texto: "", Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: ""}
+  Res = {id: "", Titulo: "", Texto: "", Ingredientes: "",Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: ""}
   //Este objeto almacena la información para validar en favoritos o registra en favoritos
   Fav = {Token: localStorage.getItem('Token'), Receta: this.Res.id = this.Aroute.snapshot.paramMap.get('id')}
   //Variable que almacena cuando una receta está en favoritos o no

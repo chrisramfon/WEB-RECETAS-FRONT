@@ -8,7 +8,7 @@ import { RecetasService } from '../Services/recetas.service';
 })
 export class FormularioComponent implements OnInit {
 
-  Recetas = {Imagen: "", Token: (localStorage.getItem('Token')),Titulo:"", Texto:"", Costo:"", Cocina:"", Lugar:"", Tiempo:"", Dificultad:"",Porciones:""}
+  Recetas = {Imagen: "", Token: (localStorage.getItem('Token')),Titulo:"", Texto:"", Ingredientes: "",Costo:"", Cocina:"", Lugar:"", Tiempo:"", Dificultad:"",Porciones:""}
 
   constructor(private recetasService: RecetasService ) { }
 
