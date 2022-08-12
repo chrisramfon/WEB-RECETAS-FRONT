@@ -25,4 +25,5 @@ export class RecetaService {
   eliminarReceta(receta){
     return this.http.post(this.recetaURL+"/eliminar", receta);
  }
+
 }
