@@ -16,24 +16,5 @@ export class EditFormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  editarRecetas(){
-    this.recetasService.editarRecetas(this.Recetas).subscribe(res =>{
-      alert("Receta modificado")
-      this.limpiar()
-    },
-    err => console.log(err)
-    )
-  }
-  limpiar(){
-    this.Recetas.Imagen = ""
-    this.Recetas.Titulo = ""
-    this.Recetas.Texto = ""
-    this.Recetas.Costo = ""
-    this.Recetas.Cocina = ""
-    this.Recetas.Lugar = ""
-    this.Recetas.Tiempo = ""
-    this.Recetas.Dificultad = ""
-    this.Recetas.Porciones = ""
-  }
 
 }

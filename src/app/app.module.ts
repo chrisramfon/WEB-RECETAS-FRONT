@@ -20,6 +20,7 @@ import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { FollowersComponent } from './followers/followers.component';
 import { EditFormularioComponent } from './edit-formulario/edit-formulario.component';
+import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 
 
 //Servicios
@@ -32,6 +33,8 @@ import { PerfilService } from './Services/perfil.service';
 import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
 import { SigninService } from './Services/signin.service';
 
+//Filtro de busqueda
+import { FiltroPipe } from './filtro.pipe';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,9 @@ import { SigninService } from './Services/signin.service';
     VerRecetaComponent,
     HomeComponent,
     VerFavoritosComponent,
-    VerPerfilComponent
+    VerPerfilComponent,
+    EditarPerfilComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,

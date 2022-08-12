@@ -8,6 +8,8 @@ export class ExploreService {
 
   private todasURL = "http://127.0.0.1:3000/receta"
 
+  filter:'';
+
   constructor(private http: HttpClient) { }
 
   getRecetas(){
