@@ -36,7 +36,7 @@ const routes: Routes = [
   {path: 'explore', component:ExploreComponent},
   {path: 'home', component: HomeComponent},
   {path: 'editar-perfil', component: EditarPerfilComponent},
-  {path: 'edit-formulario', component: EditFormularioComponent},
+  {path: 'editar-receta', component: EditFormularioComponent},
   {path: 'ver-favoritos', component: VerFavoritosComponent},
   {path:'',redirectTo:'inicio', pathMatch:'full'},
   {path:'**', redirectTo:'inicio',pathMatch:'full'}
