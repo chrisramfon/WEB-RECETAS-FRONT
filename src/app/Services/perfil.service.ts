@@ -13,6 +13,7 @@ export class PerfilService {
   private validaseguidoURL = 'http://127.0.0.1:3000/perfil/ValidaSeguido'
   private seguirURL = 'http://127.0.0.1:3000/perfil/Seguir'
   private dejarseguirURL = 'http://127.0.0.1:3000/perfil/DejarSeguir'
+  private editarURL = 'http://127.0.0.1:3000/perfil/Editar'
 
   constructor(private http: HttpClient) { }
 
@@ -42,5 +43,9 @@ export class PerfilService {
 
   dejarseguirPerfil(Envio){
     return this.http.post<any>(this.dejarseguirURL, Envio)
+  }
+
+  editarPerfil(Perfil){
+    return this.http.post<any>(this.editarURL, Perfil)
   }
 }

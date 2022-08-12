@@ -19,6 +19,8 @@ import { VerRecetaComponent } from './ver-receta/ver-receta.component';
 import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { FollowersComponent } from './followers/followers.component';
+import { EditFormularioComponent } from './edit-formulario/edit-formulario.component';
+
 
 //Servicios
 import { LoginService } from './Services/login.service';
@@ -29,8 +31,6 @@ import { VerFavoritosService } from './Services/ver-favoritos.service';
 import { PerfilService } from './Services/perfil.service';
 import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
 import { SigninService } from './Services/signin.service';
-import { EditformuComponent } from './editformu/editformu.component';
-import { FiltroPipe } from './filtro.pipe';
 
 
 @NgModule({
@@ -48,9 +48,7 @@ import { FiltroPipe } from './filtro.pipe';
     VerRecetaComponent,
     HomeComponent,
     VerFavoritosComponent,
-    VerPerfilComponent,
-    EditformuComponent,
-    FiltroPipe
+    VerPerfilComponent
   ],
   imports: [
     BrowserModule,
