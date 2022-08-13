@@ -20,6 +20,7 @@ import { VerFavoritosComponent } from './ver-favoritos/ver-favoritos.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { FollowersComponent } from './followers/followers.component';
 import { EditFormularioComponent } from './edit-formulario/edit-formulario.component';
+import { EditarPerfilComponent } from './editar-perfil/editar-perfil.component';
 
 
 //Servicios

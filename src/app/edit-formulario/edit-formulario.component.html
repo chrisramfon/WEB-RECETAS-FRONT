@@ -1,48 +1,46 @@
 <div class="main-formulario">
-    <div class="title-formulario">
-      <h1>Modifica la receta</h1>
+  <div class="title-formulario">
+    <h1>Editar receta</h1>
+  </div>
+  <div class="form-formulario">
+    <div>
+      <h2>Costo</h2>
+      <input type="number" placeholder="MXN"  class="center" [(ngModel)]="Res.Costo">
     </div>
     <div>
-      <input type="text" placeholder="¿Qué receta buscas?" class="busqueda">
+      <h2>Tiempo de elaboración</h2>
+      <input type="text" class="ct center" placeholder="Especificar horas o minutos" [(ngModel)]="Res.Tiempo">
     </div>
-      <div>
-        <h2>Titulo</h2>
-        <input type="text" placeholder="Max 60 caracteres" [(ngModel)]="Recetas.Titulo" class="center" required>
-      </div>
-      <div>
-        <h2>Costo</h2>
-        <input type="number" placeholder="MXN" [(ngModel)]="Recetas.Costo" class="center">
-      </div>
-      <div>
-        <h2>Tiempo de elaboración</h2>
-        <input type="text" class="ct center" placeholder="Especificar horas o minutos" [(ngModel)]="Recetas.Tiempo">
-      </div>
-      <div>
-        <h2>Dificultad</h2>
-        <select [(ngModel)]="Recetas.Dificultad" class="center">
-          <option value="Baja">Baja</option>
-          <option value="Media">Media</option>
-          <option value="Alta">Alta</option>
-        </select>
-      </div>
-      <div>
-        <h2>Porciones</h2>
-        <input type="number" class="ct center" placeholder="No admite decimales" [(ngModel)]="Recetas.Porciones">
-      </div>
-      <div>
-        <h2>Lugar</h2>
-        <input type="text" placeholder="En donde se encuentra" [(ngModel)]="Recetas.Lugar" class="center">
-      </div>
-      <div>
-        <h2>Tipo de cocina</h2>
-        <input type="text" placeholder="Japonesa, mediterranea, etc" [(ngModel)]="Recetas.Cocina" class="center">
-      </div>
-      <div>
-        <h2>Receta</h2>
-        <textarea name="" id="" placeholder="Pasos, ingredientes, recomendaciones, etc" [(ngModel)]="Recetas.Texto" class="center receta-formulario" ></textarea>
-      </div>
-      <div class="button-formulario">
-        <button class="center">Publicar</button>
-      </div>
+    <div>
+      <h2>Dificultad</h2>
+      <select class="center" [(ngModel)]="Res.Dificultad">
+        <option value="Baja">Baja</option>
+        <option value="Media">Media</option>
+        <option value="Alta">Alta</option>
+      </select>
+    </div>
+    <div>
+      <h2>Porciones</h2>
+      <input type="number" class="ct center" placeholder="No admite decimales" [(ngModel)]="Res.Porciones">
+    </div>
+    <div> 
+      <h2>Lugar</h2>
+      <input type="text" placeholder="En donde se encuentra"  class="center" [(ngModel)]="Res.Lugar">
+    </div>
+    <div>
+      <h2>Tipo de cocina</h2>
+      <input type="text" placeholder="Japonesa, mediterranea, etc"  class="center" [(ngModel)]="Res.Tipo_de_cocina">
+    </div>
+    <div>
+      <h2>Ingredientes</h2>
+      <textarea name="" id="" placeholder="Ingredientes"  class="center receta-formulario" [(ngModel)]="Res.Ingredientes"></textarea>
+    </div>
+    <div>
+      <h2>Receta</h2>
+      <textarea name="" id="" placeholder="Pasos, recomendaciones, etc"  class="center receta-formulario" [(ngModel)]="Res.Texto"></textarea>
+    </div>
+    <div class="button-formulario">
+      <button  class="center" (click) = "editarReceta()">Guardar</button>
+    </div>
+  </div>
 </div>
-  

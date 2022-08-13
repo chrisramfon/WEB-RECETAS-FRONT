@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { VerRecetaService } from '../Services/ver-receta.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-edit-formulario',
@@ -7,12 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditFormularioComponent implements OnInit {
 
-  Recetas = {Imagen: "", Token: (localStorage.getItem('Token')),Titulo:"", Texto:"", Costo:"", Cocina:"", Lugar:"", Tiempo:"", Dificultad:"",Porciones:""}
+  Res = {id: this.Aroute.snapshot.paramMap.get('id'), Titulo: "", Texto: "", Ingredientes: "", Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: "", Token: ""}
+  
+  constructor(private receta: VerRecetaService, private Aroute: ActivatedRoute, private router: Router) { }
 
-  constructor() { }
 
 
   ngOnInit(): void {
+    this.getReceta()
   }
-  
+
+  getReceta(){
+    this.receta.getReceta(this.Res).subscribe(
+      res => {
+        this.Res = res
+        this.Res.Token = localStorage.getItem('Token')
+      }, err => {console.log(err)})
+  }
+
+  editarReceta(){
+    this.receta.editarReceta(this.Res).subscribe(
+      res => {
+        alert('Datos almacenados.')
+        this.router.navigate([`ver-receta/${this.Res.id}`])
+      }, err => {console.log(err)})
+  }
 }
