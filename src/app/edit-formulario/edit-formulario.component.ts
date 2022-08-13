@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RecetasService } from '../Services/recetas.service';
+import { VerRecetaService } from '../Services/ver-receta.service';
 
 @Component({
   selector: 'app-edit-formulario',
@@ -8,14 +8,20 @@ import { RecetasService } from '../Services/recetas.service';
 })
 export class EditFormularioComponent implements OnInit {
 
-  Recetas = {Imagen: "", Token: (localStorage.getItem('Token')),Titulo:"", Texto:"", Costo:"", Cocina:"", Lugar:"", Tiempo:"", Dificultad:"",Porciones:""}
-
-  constructor(private recetasService: RecetasService ) { }
+  Res = {Token: localStorage.getItem('Token'), id: "", Titulo: "", Texto: "", Ingredientes: "", Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: ""}
+  
+  constructor(private receta: VerRecetaService) { }
 
 
   ngOnInit(): void {
+    this.getReceta()
   }
 
-
-
+  getReceta(){
+    this.receta.getReceta({id: 1}).subscribe(
+      res => {
+        this.Res = res
+        console.log(this.Res)
+      }, err => {console.log(err)})
+  }
 }
