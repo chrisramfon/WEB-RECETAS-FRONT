@@ -11,6 +11,8 @@ export class VerRecetaService {
   private favoritoURL = 'http://127.0.0.1:3000/receta/ValidaFavorito'
   private gfavoritoURL = 'http://127.0.0.1:3000/receta//GuardarFavorito'
   private editarURL = 'http://127.0.0.1:3000/receta/Modificar'
+  private vistaURL = "http://127.0.0.1:3000/perfil//Vista"
+
 
   constructor(private http: HttpClient) { }
 
@@ -30,6 +32,10 @@ export class VerRecetaService {
 
   editarReceta(Envio){
     return this.http.put<any>(this.editarURL, Envio)
+  }
+
+  vistaReceta(id){
+    return this.http.post<any>(this.vistaURL, id)
   }
 
 }

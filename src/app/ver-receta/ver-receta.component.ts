@@ -12,16 +12,18 @@ export class VerRecetaComponent implements OnInit {
   constructor(private receta: VerRecetaService, private Aroute: ActivatedRoute) { }
 
   //Guarda la información de la receta
-  Res = {id: "", Titulo: "", Texto: "", Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: ""}
+  Res = {id: "", Titulo: "", Texto: "", Ingredientes: "",Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: ""}
   //Este objeto almacena la información para validar en favoritos o registra en favoritos
   Fav = {Token: localStorage.getItem('Token'), Receta: this.Res.id = this.Aroute.snapshot.paramMap.get('id')}
   //Variable que almacena cuando una receta está en favoritos o no
   isFav 
+  Vista = {id: this.Aroute.snapshot.paramMap.get('id')}
 
 
   ngOnInit(): void {
     this.getReceta()
     this.postValidaFavorito()
+    this.vistaReceta()
   }
 
   //Obtiene la receta de la base de datos
@@ -51,6 +53,13 @@ export class VerRecetaComponent implements OnInit {
     console.log(res)
     this.isFav = true
     }, err=>{console.log(err)})
+  }
+
+  vistaReceta(){
+    this.receta.vistaReceta(this.Vista).subscribe(
+      res => {
+        console.log("Vista")
+      }, err => {err})
   }
 
 }

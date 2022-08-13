@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { VerRecetaService } from '../Services/ver-receta.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-edit-formulario',
   templateUrl: './edit-formulario.component.html',
@@ -12,6 +13,7 @@ export class EditFormularioComponent implements OnInit {
   Res = {id: this.Aroute.snapshot.paramMap.get('id'), Titulo: "", Texto: "", Ingredientes: "", Likes: "", Fecha: "", Costo: "", Tipo_de_cocina: "", Lugar: "", Tiempo: "", Dificultad: "", Porciones: "", Usuario: "", Token: ""}
   
   constructor(private receta: VerRecetaService, private Aroute: ActivatedRoute, private router: Router) { }
+
 
 
   ngOnInit(): void {
@@ -34,6 +36,3 @@ export class EditFormularioComponent implements OnInit {
       }, err => {console.log(err)})
   }
 }
-/*
-
-*/
