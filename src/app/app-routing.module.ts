@@ -23,7 +23,6 @@ import { EditFormularioComponent } from './edit-formulario/edit-formulario.compo
 
 
 const routes: Routes = [
-  {path: '',redirectTo:'welcome', pathMatch:'full'}, //siempre que inice es a welcome
   {path: 'login', component:LoginComponent},
   {path: 'formulario', component:FormularioComponent},
   {path: 'comentarios', component:ComentariosComponent},
@@ -38,8 +37,8 @@ const routes: Routes = [
   {path: 'editar-perfil', component: EditarPerfilComponent},
   {path: 'editar-receta/:id', component: EditFormularioComponent},
   {path: 'ver-favoritos', component: VerFavoritosComponent},
-  {path:'',redirectTo:'inicio', pathMatch:'full'},
-  {path:'**', redirectTo:'inicio',pathMatch:'full'}
+  {path: '',redirectTo:'login', pathMatch:'full'},
+  {path: '**', redirectTo:'login',pathMatch:'full'}
 ];
 
 @NgModule({

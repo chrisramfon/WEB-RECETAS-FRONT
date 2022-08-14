@@ -14,9 +14,6 @@
     <div class="contseg-profile"><p class="bio-profile">{{Seguidos.Seguidos}} </p><h3>Seguidos</h3></div>
     <div><p class="bio-profile">{{Seguidores.Seguidores}}</p><h3>Seguidores</h3></div>
   </div>
-  <div>
-    <a routerLink = "/editar-perfil"><p class="bio-profile">Editar</p></a>
-  </div>
   <div class="recetas-explore">
     <div class="box-explore" *ngFor = "let Re of Recetas"><!-- El ngfor va en este div -->
         <div>
@@ -25,7 +22,6 @@
         <div>
             <h2>{{Re.Titulo}}</h2>
             <h3>{{Re.Usuario}}</h3>
-            <a href="" routerLink = "/editar-receta/{{Re.id}}"><h3>Editar</h3></a>
             <h3>{{Re.Vistas}} Vistas</h3>
         </div>
         <button routerLink = "../ver-receta/{{Re.id}}">Ver receta</button>
