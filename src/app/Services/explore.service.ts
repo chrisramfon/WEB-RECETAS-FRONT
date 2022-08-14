@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ExploreService {
 
-  private todasURL = "http://127.0.0.1:3000/receta"
+  private todasURL = "http://192.168.100.128:3000/receta"
 
   constructor(private http: HttpClient) { }
 

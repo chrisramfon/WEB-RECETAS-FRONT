@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class UsuarioService {
 
-  private URLusuario = "http://127.0.0.1:3000/usuario"
-  private url_usuario = "http://127.0.0.1:3000/usu";
+  private URLusuario = "http://192.168.100.128:3000/usuario"
+  private url_usuario = "http://192.168.100.128:3000/usu";
 
   constructor(private http: HttpClient) { }
 

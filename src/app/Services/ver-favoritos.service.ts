@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class VerFavoritosService {
 
-  private urlFavoritos = 'http://127.0.0.1:3000/receta/Favoritos'
+  private urlFavoritos = 'http://192.168.100.128:3000/receta/Favoritos'
 
   constructor(private http: HttpClient) { }
 

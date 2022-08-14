@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginService {
 
-  private loginURL = "http://127.0.0.1:3000/login"
+  private loginURL = "http://192.168.100.128:3000/login"
 
   constructor(private http: HttpClient) { }
 
