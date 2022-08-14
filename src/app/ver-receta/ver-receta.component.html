@@ -1,20 +1,20 @@
 <div class="main-ver"><!-- Inicio del contenedor principal -->
     <div class="imagen-ver"><!-- Imagen superior -->
-        <img src="/assets/images/ver-recetas/comida.jpg" alt="">
+        <img src="./assets/images/ver-recetas/comida.jpg" alt="">
     </div><!-- Fin del contenedor de la imagen superior -->
     <div class="contenido-ver"><!-- Contiene los tres primeros iconos -->
         <div class="iconos-ver">
             <div>
-                <img src="/assets/images/ver-recetas/lugar.png" alt="" class="ico-ver">
+                <img src="./assets/images/ver-recetas/lugar.png" alt="" class="ico-ver">
                 <p class="lugar-ver">{{Res.Lugar}}</p>
             </div>
             <div *ngIf="!isFav else elseBlock"><!-- Si la receta no esta en favoritos muestra este div -->
-                <a (click) = "postGuardaFavorito()"><img src="/assets/images/ver-recetas/favorito.png" alt="" class="ico-ver">
+                <a (click) = "postGuardaFavorito()"><img src="./assets/images/ver-recetas/favorito.png" alt="" class="ico-ver">
                 <p class="favorito-ver">Favorito</p></a>
             </div>
             <ng-template #elseBlock><!-- Si la receta si se encuentra en favoritos muestra este elemento -->
                 <div>
-                    <img src="/assets/images/ver-recetas/check.png" alt="" class="ico-ver">
+                    <img src="./assets/images/ver-recetas/check.png" alt="" class="ico-ver">
                     <p class="lugar-ver">En favoritos</p>
                 </div>
             </ng-template>
@@ -27,31 +27,31 @@
         </div>
         <div class="datos-ver"><!-- Contenedor con la información de la receta -->
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/precio.png" alt="" class="icop-ver">
+                <img src="./assets/images/ver-recetas/precio.png" alt="" class="icop-ver">
                 <p>${{Res.Costo}} MXN</p>
             </div>
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/like.png" alt="" class="icol-ver">
+                <img src="./assets/images/ver-recetas/like.png" alt="" class="icol-ver">
                 <p>{{Res.Likes}}</p>
             </div>
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/fecha.png" alt="" class="icop-ver">
+                <img src="./assets/images/ver-recetas/fecha.png" alt="" class="icop-ver">
                 <p>{{Res.Fecha | date:'shortDate'}}</p>
             </div>
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/cocina.png" alt="" class="icop-ver">
+                <img src="./assets/images/ver-recetas/cocina.png" alt="" class="icop-ver">
                 <p>{{Res.Tipo_de_cocina}}</p>
             </div>
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/tiempo.png" alt="" class="icop-ver">
+                <img src="./assets/images/ver-recetas/tiempo.png" alt="" class="icop-ver">
                 <p>{{Res.Tiempo}}</p>
             </div>
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/dificultad.png" alt="" class="icop-ver">
+                <img src="./assets/images/ver-recetas/dificultad.png" alt="" class="icop-ver">
                 <p>{{Res.Dificultad}}</p>
             </div>
             <div class="precio-ver">
-                <img src="/assets/images/ver-recetas/porciones.png" alt="" class="icop-ver">
+                <img src="./assets/images/ver-recetas/porciones.png" alt="" class="icop-ver">
                 <p>{{Res.Porciones}}</p>
             </div>
         </div><!--Fin del contenedor con la información de la receta -->
