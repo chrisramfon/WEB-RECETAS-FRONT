@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PerfilService } from '../Services/perfil.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class ProfileComponent implements OnInit {
   Seguidos = {Seguidos: 0}
   Recetas
 
-  constructor(private perfil: PerfilService) { }
+  constructor(private perfil: PerfilService, private router: Router) { }
 
   ngOnInit(): void {
     this.buscaPerfil()
@@ -53,5 +54,10 @@ export class ProfileComponent implements OnInit {
         this.Recetas = res
       }, err=>{console.log(err)}
     )
+  }
+
+  salir(){
+    localStorage.removeItem('Token')
+    this.router.navigate(['welcome'])
   }
 }
