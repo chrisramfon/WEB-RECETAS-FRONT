@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
 
 export class VerRecetaService {
 
-  private encontrarURL = 'http://192.168.100.128:3000/receta/encontrar'
-  private favoritoURL = 'http://192.168.100.128:3000/receta/ValidaFavorito'
-  private gfavoritoURL = 'http://192.168.100.128:3000/receta//GuardarFavorito'
-  private editarURL = 'http://192.168.100.128:3000/receta/Modificar'
-  private vistaURL = "http://192.168.100.128:3000/perfil//Vista"
+  private encontrarURL = 'http://192.168.90.139:3000/receta/encontrar'
+  private favoritoURL = 'http://192.168.90.139:3000/receta/ValidaFavorito'
+  private gfavoritoURL = 'http://192.168.90.139:3000/receta//GuardarFavorito'
+  private editarURL = 'http://192.168.90.139:3000/receta/Modificar'
+  private vistaURL = "http://192.168.90.139:3000/perfil//Vista"
 
 
   constructor(private http: HttpClient) { }
