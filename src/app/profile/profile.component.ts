@@ -58,6 +58,6 @@ export class ProfileComponent implements OnInit {
 
   salir(){
     localStorage.removeItem('Token')
-    this.router.navigate(['welcome'])
+    this.router.navigate(['login'])
   }
 }
